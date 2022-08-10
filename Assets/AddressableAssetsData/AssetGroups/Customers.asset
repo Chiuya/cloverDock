@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Customers
+  m_EditorClassIdentifier: 
+  m_GroupName: Customers
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8c91f67c772d74c4598c195aeecc0e70
+  m_SerializeEntries:
+  - m_GUID: 816dbd8ff4a154f5892ec447e830d79a
+    m_Address: Assets/Scripts/Scriptable Objects/Customers/Little Boy.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - customer
+  - m_GUID: 409f4f24c97444be6a0e8cecea955ded
+    m_Address: Assets/Scripts/Scriptable Objects/Customers/Bride.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - customer
+  - m_GUID: 57b0e4a27867f4229b5db6c600e44b85
+    m_Address: Assets/Scripts/Scriptable Objects/Customers/Boxer.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - customer
+  - m_GUID: a20a3c1777bd7424186f70493cd7a00f
+    m_Address: Assets/Scripts/Scriptable Objects/Customers/Ballerina.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - customer
+  - m_GUID: a3aff7368f183494a8940f6e1a2936b1
+    m_Address: Assets/Scripts/Scriptable Objects/Customers/Samurai.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - customer
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: dda0c3afae3244087934fdf70e136ffe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 87a06b699532548209dd500a8a0c886d, type: 2}
+    - {fileID: 11400000, guid: 8e6dbcd1ce4014f13a812f1b17c7e988, type: 2}
