@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonFunctions : MonoBehaviour
 {
     [SerializeField]
-    GameObject toDestroy;
+    GameObject infanticide;
 
     public void destroyChildren() 
     {
@@ -18,6 +18,11 @@ public class ButtonFunctions : MonoBehaviour
     public void resumeTime()
     {
         Time.timeScale = 1.0f;
+    }
+
+    public void stopTime()
+    {
+        Time.timeScale = 0.0f;
     }
     
     public void toggleTime()

@@ -23,5 +23,5 @@ MonoBehaviour:
     Type: CustomerObject
   - Name: ArrayIntSO
     Type: ArrayIntSO
-  - Name: InventorySO
-    Type: InventorySO
+  - Name: GiftSO
+    Type: GiftSO

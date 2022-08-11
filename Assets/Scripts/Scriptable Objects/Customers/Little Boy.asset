@@ -15,7 +15,7 @@ MonoBehaviour:
   customerName: Little Boy
   description: He's lost his way.
   artwork: {fileID: 21300000, guid: 82abe1233c908420791ae7e01d7c80c7, type: 3}
-  gift: {fileID: 0}
+  gift: {fileID: 11400000, guid: 38cfe7a624c9f4cb89b0ab5a11953cfe, type: 2}
   faveFish: {fileID: 11400000, guid: 26a905900dff44e62b342aabfeb587af, type: 2}
   repCurr: 1
   dialogueManager: {fileID: 9092468655179705436, guid: 42999e3c56888432093e898153b97740, type: 3}
