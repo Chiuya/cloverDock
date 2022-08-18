@@ -9,7 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2acbf8110893f4c1e8a9aa88c74097eb, type: 3}
-  m_Name: Level
+  m_Script: {fileID: 11500000, guid: 0873f3f304cc341db9b6325c1cc78b53, type: 3}
+  m_Name: Goldfish
   m_EditorClassIdentifier: 
-  _value: 12
+  ID: 0
+  itemName: Goldfish
+  itemType: 
+  description: 
+  artwork: {fileID: 0}
+  value: 0

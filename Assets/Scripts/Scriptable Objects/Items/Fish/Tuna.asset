@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0873f3f304cc341db9b6325c1cc78b53, type: 3}
   m_Name: Tuna
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 2
   itemName: Tuna
   itemType: Fish
   description: A tuna fish.

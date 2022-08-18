@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Bride
   m_EditorClassIdentifier: 
   customerName: Bride
-  description: 
+  description: She's as beautiful as ever.
   artwork: {fileID: 21300000, guid: 82abe1233c908420791ae7e01d7c80c7, type: 3}
-  gift: {fileID: 0}
+  gift: {fileID: 11400000, guid: 048f43eea68a3484e8fca10988d194ab, type: 2}
   faveFish: {fileID: 11400000, guid: dda0fc6ef4c61419cb96bb25e245ee1e, type: 2}
   repCurr: 0
   dialogueManager: {fileID: 9092468655179705436, guid: c27bfba7911744a67bae456b0429c15a, type: 3}

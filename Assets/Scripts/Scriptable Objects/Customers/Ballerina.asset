@@ -15,7 +15,7 @@ MonoBehaviour:
   customerName: Ballerina
   description: 
   artwork: {fileID: 21300000, guid: 82abe1233c908420791ae7e01d7c80c7, type: 3}
-  gift: {fileID: 0}
-  faveFish: {fileID: 0}
+  gift: {fileID: 11400000, guid: c71618c3e96fb4415a1e89579a0e47b9, type: 2}
+  faveFish: {fileID: 11400000, guid: 850fc73e1d994452c8b954a85a4e9956, type: 2}
   repCurr: 0
   dialogueManager: {fileID: 9092468655179705436, guid: 6cecea2c2bab4498296663835584fe7a, type: 3}

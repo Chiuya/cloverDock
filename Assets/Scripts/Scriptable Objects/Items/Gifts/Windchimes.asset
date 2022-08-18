@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b9ff6207168455a983a456cc014a5b, type: 3}
   m_Name: Windchimes
   m_EditorClassIdentifier: 
-  giftName: 
+  giftName: Windchimes
   artwork: {fileID: 0}

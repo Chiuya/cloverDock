@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Boxer
   m_EditorClassIdentifier: 
   customerName: Boxer
-  description: 
+  description: A bit of a rascal.
   artwork: {fileID: 21300000, guid: 82abe1233c908420791ae7e01d7c80c7, type: 3}
-  gift: {fileID: 0}
-  faveFish: {fileID: 0}
+  gift: {fileID: 11400000, guid: abfddcda26d93497f98ba71fb67dda62, type: 2}
+  faveFish: {fileID: 11400000, guid: 6952fc132dd4e417fb1059b1c340edac, type: 2}
   repCurr: 0
   dialogueManager: {fileID: 9092468655179705436, guid: 9a84315dc20504da68141bf180039042, type: 3}
