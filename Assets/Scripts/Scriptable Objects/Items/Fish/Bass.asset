@@ -16,5 +16,5 @@ MonoBehaviour:
   itemName: 
   itemType: 
   description: 
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: ddc74b070da644290bd3248ba33834f6, type: 3}
   value: 0

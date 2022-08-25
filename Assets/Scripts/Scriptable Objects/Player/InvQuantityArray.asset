@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1451f6cb0e741e18b2e4977dbd646a, type: 3}
   m_Name: InvQuantityArray
   m_EditorClassIdentifier: 
-  intArray: 0c0000000f000000
+  intArray: 080000000a000000

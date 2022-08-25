@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CreateAssetMenu(fileName = "New Int Array", menuName = "Int Array Object")]
+[CreateAssetMenu(fileName = "New Int Array", menuName = "ArraySO/Int Array")]
 public class ArrayIntSO : ScriptableObject
 {
     [SerializeField]

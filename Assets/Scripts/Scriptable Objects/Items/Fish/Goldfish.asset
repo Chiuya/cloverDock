@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   itemName: Goldfish
-  itemType: 
-  description: 
-  artwork: {fileID: 0}
-  value: 0
+  itemType: Fish
+  description: Small.
+  artwork: {fileID: 21300000, guid: ddc74b070da644290bd3248ba33834f6, type: 3}
+  value: 10

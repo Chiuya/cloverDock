@@ -209,7 +209,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: sceneToLoad
         - useVariable: 1
           name: sceneToLoad
           tooltip: 

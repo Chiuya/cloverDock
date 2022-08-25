@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ballerina
   m_EditorClassIdentifier: 
   customerName: Ballerina
-  description: 
+  description: A bit shy. Give her some time.
   artwork: {fileID: 21300000, guid: 82abe1233c908420791ae7e01d7c80c7, type: 3}
   gift: {fileID: 11400000, guid: c71618c3e96fb4415a1e89579a0e47b9, type: 2}
   faveFish: {fileID: 11400000, guid: 850fc73e1d994452c8b954a85a4e9956, type: 2}
