@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1af2d0ff796ef446a924cdbed69b9971
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - coinsSO: {fileID: 11400000, guid: 0c139a44d08774c0d9680f849ffd193c, type: 2}
+  - energySO: {fileID: 11400000, guid: 097509f5b228e4d2bb56d94fd984ef37, type: 2}
+  - energyTimerSO: {fileID: 11400000, guid: 05b7510e8c73f4ea1a4c7ece5e41bb60, type: 2}
+  - experienceSO: {fileID: 11400000, guid: 96c463a1d5bf34106a6bb3a823657510, type: 2}
+  - invIdArraySO: {fileID: 11400000, guid: 82d4eb26af46d47dcb66684266b38b7a, type: 2}
+  - invQuantityArraySO: {fileID: 11400000, guid: 8b7393fa3485f40e4b83079becff1727, type: 2}
+  - levelSO: {fileID: 11400000, guid: dbf1393a7a399482c979c59a9fc92b7b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,17 +4,6 @@ using UnityEngine;
 
 public class ButtonFunctions : MonoBehaviour
 {
-    [SerializeField]
-    GameObject infanticide;
-
-    public void destroyChildren() 
-    {
-        while (transform.childCount > 0) 
-        {
-            DestroyImmediate(transform.GetChild(0).gameObject);
-        }
-    }
-
     public void resumeTime()
     {
         Time.timeScale = 1.0f;

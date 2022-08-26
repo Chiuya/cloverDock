@@ -1661,17 +1661,133 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramName.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataPos.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramName.Array.data[4]
+      value: weights
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramName.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramName.Array.data[8]
+      value: storeVector2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataType.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmFloatParams.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataPos.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataPos.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataPos.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataPos.Array.data[7]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataPos.Array.data[8]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataType.Array.data[4]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataType.Array.data[5]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataType.Array.data[6]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataType.Array.data[7]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramDataType.Array.data[8]
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.paramByteDataSize.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.arrayParamSizes.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.arrayParamSizes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[3].actionData.fsmFloatParams.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[3].actionData.fsmFloatParams.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.data[3].name
+      value: goToVector
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.data[0].value.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.data[1].value.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.data[2].value.x
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.data[3].value.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743504909394016488, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVector2Params.Array.data[3].useVariable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9050880546599541457, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9050880546599541457, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7576673
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 9050880546599541457, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.94363344
+      value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 9050880546599541457, guid: 067a553f0cbbf4d26b6f678b73e47a8e, type: 3}
       propertyPath: m_LocalPosition.z

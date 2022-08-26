@@ -14385,7 +14385,7 @@ GameObject:
   - component: {fileID: 1990361777}
   - component: {fileID: 1990361778}
   m_Layer: 0
-  m_Name: CustomerPool
+  m_Name: CustomerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18488,7 +18488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec71efdeb2504e8b9f9b5cf77862d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infanticide: {fileID: 0}
 --- !u!1 &3590591917830030437
 GameObject:
   m_ObjectHideFlags: 0

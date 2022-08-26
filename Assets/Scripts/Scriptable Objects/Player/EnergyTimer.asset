@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9574f159bd5cf4f30954117462fbfc9f, type: 3}
   m_Name: EnergyTimer
   m_EditorClassIdentifier: 
-  _value: 180
+  _value: 115
