@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6675070226821496507}
-  - component: {fileID: 6675070226821496506}
   - component: {fileID: 6675070226821496504}
   - component: {fileID: 436315393458609773}
+  - component: {fileID: 5362808150814077459}
   m_Layer: 0
-  m_Name: PlayerManager
+  m_Name: SaveLoadManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,31 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6675070226821496506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6675070226821496509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af2d0ff796ef446a924cdbed69b9971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinsSO: {fileID: 11400000, guid: 0c139a44d08774c0d9680f849ffd193c, type: 2}
-  energySO: {fileID: 11400000, guid: 097509f5b228e4d2bb56d94fd984ef37, type: 2}
-  energyTimerSO: {fileID: 11400000, guid: 05b7510e8c73f4ea1a4c7ece5e41bb60, type: 2}
-  experienceSO: {fileID: 11400000, guid: 96c463a1d5bf34106a6bb3a823657510, type: 2}
-  invIdArraySO: {fileID: 11400000, guid: 82d4eb26af46d47dcb66684266b38b7a, type: 2}
-  invQuantityArraySO: {fileID: 11400000, guid: 8b7393fa3485f40e4b83079becff1727, type: 2}
-  levelSO: {fileID: 11400000, guid: dbf1393a7a399482c979c59a9fc92b7b, type: 2}
-  customerSOArray:
-  - {fileID: 11400000, guid: 816dbd8ff4a154f5892ec447e830d79a, type: 2}
-  - {fileID: 11400000, guid: 409f4f24c97444be6a0e8cecea955ded, type: 2}
-  - {fileID: 11400000, guid: 57b0e4a27867f4229b5db6c600e44b85, type: 2}
-  - {fileID: 11400000, guid: a20a3c1777bd7424186f70493cd7a00f, type: 2}
-  - {fileID: 11400000, guid: a3aff7368f183494a8940f6e1a2936b1, type: 2}
 --- !u!114 &6675070226821496504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,15 +89,15 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: LoadPlayer
+          value: Load
         fsmObjectParams:
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          typeName: Player
-          value: {fileID: 6675070226821496506}
+          typeName: PlayerSave
+          value: {fileID: 5362808150814077459}
         fsmVarParams:
         - variableName: 
           objectType: 
@@ -212,15 +187,15 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: SavePlayer
+          value: Save
         fsmObjectParams:
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          typeName: Player
-          value: {fileID: 6675070226821496506}
+          typeName: PlayerSave
+          value: {fileID: 5362808150814077459}
         fsmVarParams:
         - variableName: 
           objectType: 
@@ -680,3 +655,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &5362808150814077459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6675070226821496509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03144245bc046485089e3b115948e571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsSO: {fileID: 11400000, guid: 0c139a44d08774c0d9680f849ffd193c, type: 2}
+  energySO: {fileID: 11400000, guid: 097509f5b228e4d2bb56d94fd984ef37, type: 2}
+  energyTimerSO: {fileID: 11400000, guid: 05b7510e8c73f4ea1a4c7ece5e41bb60, type: 2}
+  experienceSO: {fileID: 11400000, guid: 96c463a1d5bf34106a6bb3a823657510, type: 2}
+  invIdArraySO: {fileID: 11400000, guid: 82d4eb26af46d47dcb66684266b38b7a, type: 2}
+  invQuantityArraySO: {fileID: 11400000, guid: 8b7393fa3485f40e4b83079becff1727, type: 2}
+  levelSO: {fileID: 11400000, guid: dbf1393a7a399482c979c59a9fc92b7b, type: 2}
