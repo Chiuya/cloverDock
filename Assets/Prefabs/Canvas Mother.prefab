@@ -6670,7 +6670,7 @@ MonoBehaviour:
       - useVariable: 1
         name: fishSOArray
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         type: 12
         objectTypeName: ItemObject
@@ -6680,6 +6680,8 @@ MonoBehaviour:
         stringValues: []
         vector4Values: []
         objectReferences:
+        - {fileID: 11400000, guid: daa123538154f4cb2b115eda70b16af9, type: 2}
+        - {fileID: 11400000, guid: 0adaad0a8ec82467c91e5b370b30493a, type: 2}
         - {fileID: 11400000, guid: 26a905900dff44e62b342aabfeb587af, type: 2}
         - {fileID: 11400000, guid: dda0fc6ef4c61419cb96bb25e245ee1e, type: 2}
       enumVariables: []
@@ -6823,7 +6825,7 @@ MonoBehaviour:
       - useVariable: 1
         name: customerSOArray
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         type: 12
         objectTypeName: CustomerObject

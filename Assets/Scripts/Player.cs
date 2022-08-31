@@ -31,7 +31,13 @@ public class Player : MonoBehaviour
         levelSO.Value = data.level;
         for (int i = 0; i < customerSOArray.Length; i++)
         {
-            customerSOArray[i].repCurr = 0;//data.specialCustomerRep[i];
+            if (i < data.specialCustomerRep.Length)
+            {
+                customerSOArray[i].repCurr = data.specialCustomerRep[i];
+            } else
+            {
+                customerSOArray[i].repCurr = 0;
+            }
         }
     }
 }
