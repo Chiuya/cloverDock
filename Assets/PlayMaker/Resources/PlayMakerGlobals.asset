@@ -51,7 +51,7 @@ MonoBehaviour:
     variableCategoryIDs: 000000000000000000000000
   events:
   - ALBUM SLOT SELECTED
-  - UseEnergy
   - TOGGLE RESTOCK
   - toggleInventory
   - ToggleInventory
+  - UseEnergy

@@ -9403,6 +9403,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2057956622161711394, guid: cc9f4533cba3f4eaebe405bdb7eca99c, type: 3}
   m_PrefabInstance: {fileID: 1145216926}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1145216929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6359495320894005499, guid: cc9f4533cba3f4eaebe405bdb7eca99c, type: 3}
+  m_PrefabInstance: {fileID: 1145216926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1204193295
 GameObject:
   m_ObjectHideFlags: 0
@@ -9517,8 +9528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.48, y: -1.0101}
-  m_SizeDelta: {x: 2.7387, y: 2.7393}
+  m_AnchoredPosition: {x: -16.5895, y: -0.5902}
+  m_SizeDelta: {x: 1.8258, y: 3.5791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227737886
 MonoBehaviour:
@@ -9574,6 +9585,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1145216929}
+        m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+        m_MethodName: SendEvent
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SAVE
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1227737887
@@ -16460,13 +16483,13 @@ MonoBehaviour:
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: customerGO
+          name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
-          name: 
+          name: customerGO
           tooltip: 
           showInInspector: 0
           networkSync: 0
