@@ -1,2 +1,3 @@
-# cloverDock
-my second unity project, a cozy fishing game
+# Clover Dock
+A cozy idle fishing game.
+Made in Unity using Playmaker.
