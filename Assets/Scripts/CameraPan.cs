@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraPan : MonoBehaviour
 {
+    
+    public bool canPan = true;
     public Camera mainCamera;
     private Vector3 touchStart = Vector3.zero;
     public float xMin, xMax;
@@ -13,19 +15,22 @@ public class CameraPan : MonoBehaviour
     void Awake()
     {
         targetPos = mainCamera.transform.position;
+        canPan = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            touchStart = GetWorldPosition(groundZ);
-        }
-        if (Input.GetMouseButton(0))
-        {
-            targetPos.x = Mathf.Clamp(mainCamera.transform.position.x + (touchStart.x - GetWorldPosition(groundZ).x), xMin, xMax);
-            mainCamera.transform.position = targetPos;
+        if (canPan) {
+            if (Input.GetMouseButtonDown(0))
+            {
+                touchStart = GetWorldPosition(groundZ);
+            }
+            if (Input.GetMouseButton(0))
+            {
+                targetPos.x = Mathf.Clamp(mainCamera.transform.position.x + (touchStart.x - GetWorldPosition(groundZ).x), xMin, xMax);
+                mainCamera.transform.position = targetPos;
+            }
         }
     }
 

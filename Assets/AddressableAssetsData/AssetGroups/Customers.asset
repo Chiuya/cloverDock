@@ -16,32 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 8c91f67c772d74c4598c195aeecc0e70
-  m_SerializeEntries:
-  - m_GUID: 816dbd8ff4a154f5892ec447e830d79a
-    m_Address: Assets/Scripts/Scriptable Objects/Customers/Little Boy.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - customer
-  - m_GUID: 409f4f24c97444be6a0e8cecea955ded
-    m_Address: Assets/Scripts/Scriptable Objects/Customers/Bride.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - customer
-  - m_GUID: 57b0e4a27867f4229b5db6c600e44b85
-    m_Address: Assets/Scripts/Scriptable Objects/Customers/Boxer.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - customer
-  - m_GUID: a20a3c1777bd7424186f70493cd7a00f
-    m_Address: Assets/Scripts/Scriptable Objects/Customers/Ballerina.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - customer
-  - m_GUID: a3aff7368f183494a8940f6e1a2936b1
-    m_Address: Assets/Scripts/Scriptable Objects/Customers/Samurai.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - customer
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: dda0c3afae3244087934fdf70e136ffe, type: 2}
   m_SchemaSet:

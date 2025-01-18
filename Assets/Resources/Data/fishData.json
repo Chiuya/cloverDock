@@ -1,0 +1,53 @@
+{
+    "fishData": [
+        {
+            "ID": 0,
+            "fishName": "Tuna",
+            "fishType": "Fish",
+            "description": "A big tuna. We are eating good tuna-ight!",
+            "spriteName": "Tuna",
+            "value": 4},
+        {
+            "ID": 1,
+            "fishName": "Seahorse",
+            "fishType": "Fish",
+            "description": "A little seahorse. I'm so hungry I could eat it.",
+            "spriteName": "Seahorse",
+            "value": 4},
+        {
+            "ID": 2,
+            "fishName": "Clownfish",
+            "fishType": "Fish",
+            "description": "A tiny orange clownfish. So that's where you've been hiding.",
+            "spriteName": "Clownfish",
+            "value": 4},
+        {
+            "ID": 3,
+            "fishName": "Squid",
+            "fishType": "Fish",
+            "description": "A small squid. It really tentacles my fancy.",
+            "spriteName": "Squid",
+            "value": 12},
+        {
+            "ID": 4,
+            "fishName": "Shrimp",
+            "fishType": "Fish",
+            "description": "A red shrimp. One in a krillion!",
+            "spriteName": "Shrimp",
+            "value": 18},
+        {
+            "ID": 5,
+            "fishName": "Goldfish",
+            "fishType": "Fish",
+            "description": "A glittering goldfish. It doesn't remember me.",
+            "spriteName": "Goldfish",
+            "value": 25},
+        {
+            "ID": 6,
+            "fishName": "Pufferfish",
+            "fishType": "Fish",
+            "description": "A spiky pufferfish. I'm blown away!",
+            "spriteName": "Pufferfish",
+            "value": 30}
+    ]
+}

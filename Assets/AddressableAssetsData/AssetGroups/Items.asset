@@ -16,17 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 1b1548fddfa4849fd82b53bf0dda14f7
-  m_SerializeEntries:
-  - m_GUID: 26a905900dff44e62b342aabfeb587af
-    m_Address: Assets/Scripts/Scriptable Objects/Items/Fish/Tuna.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - fish
-  - m_GUID: dda0fc6ef4c61419cb96bb25e245ee1e
-    m_Address: Assets/Scripts/Scriptable Objects/Items/Fish/Oyster.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - fish
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: dda0c3afae3244087934fdf70e136ffe, type: 2}
   m_SchemaSet:

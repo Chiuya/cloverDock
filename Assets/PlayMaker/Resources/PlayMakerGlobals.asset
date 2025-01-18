@@ -55,3 +55,18 @@ MonoBehaviour:
   - toggleInventory
   - ToggleInventory
   - UseEnergy
+  - START CONVO
+  - OPTION CLICKED
+  - OPEN
+  - UPDATE ALBUM
+  - SALE ATTEMPT
+  - SUCCESS
+  - SET BLANK
+  - UPDATE INV DISPLAY
+  - UPDATE
+  - COUNTDOWN
+  - REPLACE BAIT
+  - CLOSE
+  - DIALOGUE
+  - LEVEL UP
+  - REPLAY

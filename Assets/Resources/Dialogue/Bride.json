@@ -1,0 +1,87 @@
+{
+    "convoArray": [
+        {
+            "id": 0,
+            "length": 23,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hello?", "Gah! A bear!", "Well... you're a bit of a small bear, aren't you?", "Where is this? Where are we?", "Fish shop? How did I get here?", "Where's my husband?", 
+            "My husband. We were...", "Wait... where were we? What were we doing?", "...", "I can't remember.", "...", "Great, just what I needed. Lost, confused, and in the middle of nowhere.", 
+            "Optimistic, aren't we?", "Well, I'm not just going to sit around and twiddle my thumbs.", "I'll go look for my husband.", "You can help me, right?", "...", "Is that all you do?", 
+            "You seem like you've got some free time.", "...", "Fine, fine. I'll start without you.", "But if you see a black rabbit with a floppy left ear, you'd better let me know. Got it?", 
+            "Where has that idiot run off to...?"],
+            "options": ["Hello there.", "Hey, it's okay.", "...", "My fish shop.", "", "Your husband?", "", "", "", "", "", "Maybe your husband will show up.", "It's possible.", "You have thumbs?", 
+            "", "I have to fish.", "", "Pretty much.", "", "...", "", "Got it.", ""]
+        },
+        {
+            "id": 1,
+            "length": 19,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hi.", "Something's been bugging me.", "The sun. It doesn't move. Just stuck there, like someone forgot to wind the clock.", "Always? No sunrise, no sunset? How can you even tell the time?", 
+            "Ha... that explains a lot. I can't even tell how long I've been here.", "Days? Weeks? No clue.", "...", "Plus... there's this weird structure outside.", 
+            "Looks like what's left of a tower. Big, crumbling, dusty old thing.", "You know what it is?", "Oh, that's helpful. Guess you've got your fishing to keep you busy.", 
+            "I tried to leave, you know. Walked down the road. Ended up back where I started.", "It's like this place won't let me go. Like I'm on a hamster wheel.", 
+            "No sense of time, no way to leave... feels like a weird dream.", "Ha...", "I guess all I can do is continue to poke around.", "You keep doing... whatever it is you do.", "Right...", 
+            "Let me know if you catch anything useful, like a map."],
+            "options": ["Hello again.", "What?", "It's always like that.", "I can't.", "", "", "", "", "", "I'm not sure.", "", "", "", "", "", "", "Fish.", "", ""]
+        },
+        {
+            "id": 2,
+            "length": 17,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["You know, I noticed something on my walk earlier.", "There's no flowers around here.", "Of course, you didn't... no eye for beauty.", "But it's weird isn't it? Not even a single weedy dandelion or buttercup.", 
+            "Back home, there are flowers everywhere.", "Persistent little things, blooming in the cracks in stones, around the old well... everywhere.", "They really are an eyesore... but now I kind of miss them.", 
+            "...", "My husband always brings me flowers. Roses, mostly.", "He'd come home with a little bundle, or even just a single flower.", "It is. Even when we didn't have much money, he'd find a way.", 
+            "I used to scold him for it. Told him it was wasteful.", "Why spend money on something that'll just wilt?", "And he would always say... it's because I'm worth it.", "I could never really stay mad at him.", 
+            "...", "I wonder if he's out there somewhere, waiting for me with a handful of those silly flowers."],
+            "options": ["Hello to you, too.", "Really? I never noticed.", "", "", "", "", "", "", "", "That's sweet.", "", "", "", "", "", "", "I'm sure he is."]
+        },
+        {
+            "id": 3,
+            "length": 22,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey, do you hear that?", "Bells. Like... church bells.", "Faint... like they're coming from far away.", "Oh, come on. You really don't hear that? It's faint but it's clear.", 
+            "It reminds me of my wedding day. The bells were so loud, borderline obnoxious.", "But I guess that's the point. Lets everyone know it's a special moment.", "It wasn't that big of a wedding, but it was perfect.", 
+            "My mother wouldn't stop crying, and my father just kept pacing.", "I thought his shoes were going to wear a hole in the floor.", "Oh, definitely. I wasn't sure I could even walk down the aisle without tripping over my dress.", 
+            "It had this ridiculously long train... so impractical. But so beautiful.", "I felt like a princess.", "And the way my husband looked at me when I walked down the aisle...", "Like I was the only person in the world.", 
+            "His eyes lit up and, for a moment, everything else around us just... disappeared.", "He does. He's my world, truly. Keeps me grounded.", "When everything feels like too much, too overwhelming, he's the one that holds me steady.", 
+            "...", "I hope he's doing okay. I hope he's not worrying too much about me.", "...", "Maybe those church bells are for him, too. Like... a sign.", "Maybe they'll help him find his way to me."],
+            "options": ["Hear what?", "", "I don't hear them.", "", "", "", "", "", "Were you nervous?", "", "", "", "", "", "He must love you a lot.", "", "", "", "", "", "", "Maybe."]
+        },
+        {
+            "id": 4,
+            "length": 26,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey.", "Have you ever been in love?", "I'm serious. Have you?", "Really?", "I've been thinking about it a lot. Love, I mean.", "Oh, don't sound so scared.", 
+            "I just... I've been reminiscing about my relationship with my husband.", "Marriage is funny, isn't it?", "It's this odd mix of beautiful moments and sheer chaos.", "Love isn't just candlelit dinners and perfect sunsets.", 
+            "It's dirty laundry, burnt toast, and fighting over who's turn it is to wash the dishes.", "And yet... those domestic squabbles feel so magical.", "It is work. But it's the good kind of work.", 
+            "You want to put in the work because you care.", "Love isn't perfection. It's persistence.", "You know, my husband would always peel my oranges.", "Without fail, every day after dinner, he would peel my oranges for me.", 
+            "He would even pick out those little white strings because I don't like them.", "It's extra work, and I would easily eat those white strings without complaint.", "But it's those sorts of small acts and quiet moments that really scream love.", 
+            "Yeah. Or holding my hand when I'm nervous.", "Or pouring my tea for me because it's a little hard for me to lift the pot.", "It's not about sweeping someone off their feet--it's about standing beside them when their world feels unsteady.", 
+            "Ha, well...", "Don't aim for perfect. Aim for real.", "Ah, and keep a stash of roses handy. Trust me on that."],
+            "options": ["Hello there.", "That came out of nowhere.", "I don't think I have.", "", "Heavy topic.", "", "", "", "", "", "", "Sounds like a lot of work.", "", "", "", "", "", "", "", "Like bringing you flowers?", "", "", 
+            "I feel a little unprepared for love.", "", "", ""]
+        },
+        {
+            "id": 5,
+            "length": 22,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["I've been feeling a little strange lately.", "Like... something's just out of reach.", "My memories, I mean. They're hazy, but I've been thinking more lately.", "I remember bits and pieces. A room. Dim light. The smell of iron.", 
+            "And pain... so much pain.", "I remember holding my husband's hand. He wouldn't let go, no matter how hard I squeezed him.", "He kept saying something, but I couldn't hear him. But I could tell he was scared.", 
+            "He was trembling so much.", "I remember people talking--calm, but urgent.", "And then the world just became... muffled.", "The pain, the voices, the feeling of my husband's hand...", "It all just faded.", 
+            "And maybe I'm just being overly hopeful but I faintly remember...", "A baby crying.", "...", "Yeah... I just... I wish I could've stayed.", "...", "But I don't regret anything. I'd do it all again if it meant giving her a chance.", 
+            "That's what love is, isn't it?", "Giving everything, even if it costs you all of it.", "Ha, maybe.", "Maybe love just makes you brave in ways you didn't know you could be."],
+            "options": ["How so?", "", "", "", "", "", "", "", "", "", "", "", "", "", "Are you alright?", "", "", "", "", "You're very strong.", "", ""]
+        },
+        {
+            "id": 6,
+            "length": 24,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey, did you see that?", "What else? The new road. There's a different path now.", "It wasn't there before, was it?", "Seriously? It's right there.", "That's so odd.", "What does it mean? What should I do?", 
+            "You think I should follow it?", "I'm not sure.", "It just feels so... final. Like, once I go, I won't come back.", "And you'll still be here, fishing away.", "Home..?", "I've been searching for so long, haven't I?", 
+            "Looking for my husband, for answers...", "Maybe everything is waiting at the end of this road.", "...", "But I'm scared.", "That's silly, isn't it? After everything I've been through, I'm scared to walk down a road.", "...", 
+            "You're not a man of many words, are you?", "But you're right... I can't stay here forever.", "I'll miss you, you stinky old bear.", "If my husband ever comes by... tell him I'll be waiting, just a little farther down the road.", 
+            "And... here. This is for you.", "Thanks for everything."],
+            "options": ["See what?", "", "I don't see it.", "", "", "", "Do you want to?", "", "", "Maybe it's your way home.", "", "", "", "Only one way to find out.", "", "", "It's not silly.", "", "", "", "I'll miss you, too.", "", "", ""]
+        }
+    ]
+}
