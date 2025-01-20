@@ -215,11 +215,11 @@ RectTransform:
   m_Father: {fileID: 876581324}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 740, y: 10}
-  m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -40, y: 60}
+  m_SizeDelta: {x: 35, y: 35}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &228455378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,8 +851,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -31.584808, y: -28.197502}
-  m_SizeDelta: {x: 636.8304, y: 288.4054}
+  m_AnchoredPosition: {x: 0.20439911, y: -28.197502}
+  m_SizeDelta: {x: 700.4089, y: 288.4054}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749291730
 MonoBehaviour:
@@ -2815,8 +2815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -32.485737, y: -29.28061}
-  m_SizeDelta: {x: -64.9714, y: -58.5602}
+  m_AnchoredPosition: {x: 0, y: -29.28061}
+  m_SizeDelta: {x: 0.000061035, y: -58.5602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1115422618 stripped
 GameObject:
@@ -3162,13 +3162,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.5
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 7
+          value: 2.5
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -5077,8 +5077,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 354
-        y: 100
+        x: 402
+        y: 212
         width: 100
         height: 16
       isBreakpoint: 0
@@ -5129,8 +5129,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 575.1875
-        y: 121.63281
+        x: 821.96875
+        y: 209.42188
         width: 116
         height: 32
       isBreakpoint: 0
@@ -5236,8 +5236,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 547.84375
-        y: 182.04688
+        x: 832.78906
+        y: 282.85156
         width: 149
         height: 32
       isBreakpoint: 0
@@ -5248,7 +5248,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Tutorial Check
+        toState: Idle
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -5362,8 +5362,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 345.27344
-        y: 165.17188
+        x: 706.0078
+        y: 113.515625
         width: 115
         height: 48
       isBreakpoint: 0
@@ -5374,7 +5374,7 @@ MonoBehaviour:
           name: Success
           isSystemEvent: 0
           isGlobal: 0
-        toState: Tell TutorialManager Next Fish
+        toState: fishup Clownfish
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -5383,7 +5383,7 @@ MonoBehaviour:
           name: Failure
           isSystemEvent: 0
           isGlobal: 0
-        toState: Idle
+        toState: fishUpRandom
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -5475,8 +5475,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 308.97656
-        y: 260.39062
+        x: 317.84375
+        y: 330.46875
         width: 209
         height: 48
       isBreakpoint: 0
@@ -5658,8 +5658,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 52.078125
-        y: 287.58594
+        x: 60.945312
+        y: 357.66406
         width: 183
         height: 16
       isBreakpoint: 0
@@ -5716,6 +5716,239 @@ MonoBehaviour:
         - sendToUnityLog
         paramDataPos: 000000000000000004000000
         paramByteDataSize: 040000000000000001000000
+    - name: fishup Clownfish
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 636.6719
+        y: 209.15625
+        width: 127
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Caught clownfish Text
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CallMethod
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: ca51e900
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: tutorialFishUpClownfish
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: FishingGameplay
+          value: {fileID: 1528483587}
+        fsmVarParams:
+        - variableName: nameString
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 4
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000
+        arrayParamSizes: 00000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 18000000120000000c000000270000000100000001000000
+        paramName:
+        - behaviour
+        - methodName
+        - parameters
+        - storeResult
+        - everyFrame
+        - manualUI
+        paramDataPos: 000000000000000000000000000000000000000001000000
+        paramByteDataSize: 000000000000000000000000000000000100000001000000
+    - name: Caught clownfish Text
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 553.5156
+        y: 275.64844
+        width: 162
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Tell TutorialManager Next Fish
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BuildString
+        - HutongGames.PlayMaker.Actions.setTextmeshProUGUIText
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 7370ae05e9f73304
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 398431191}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 'Obtained:'
+        - useVariable: 1
+          name: nameString
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: ' '
+        - useVariable: 1
+          name: stringToDisplay
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: stringToDisplay
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 02000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000001200000012000000110000001200000001000000140000001200000011000000
+        paramName:
+        - stringParts
+        - 
+        - 
+        - separator
+        - addToEnd
+        - storeResult
+        - everyFrame
+        - gameObject
+        - textString
+        - everyFrame
+        paramDataPos: 00000000000000000100000002000000000000000300000000000000000000000400000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000000000000
     events:
     - name: Caught Fish
       isSystemEvent: 0
@@ -5734,7 +5967,7 @@ MonoBehaviour:
         name: Caught Fish
         isSystemEvent: 0
         isGlobal: 0
-      toState: fishUpRandom
+      toState: Tutorial Check
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0

@@ -40,10 +40,12 @@ public class CustomerPoolManager : MonoBehaviour
         int numCust = customerDataManager.getNumCustomers();
         for (int i = 0; i < numCust; i++) {
             string name = customerDataManager.getCustomerName(i);
-            if (customerDataManager.getIsGifted(name) != "") { //has already sent a gift
+            if (customerDataManager.getHasGifted(name)) { //has already sent a gift
+                //Debug.Log(name + " has already sent a gift!");
                 break;
             }
             if (customerDataManager.isCustomerUnlocked(name)) {
+                //Debug.Log("added: " + name + " to customer pool");
                 customerNamePool.Add(name);
             } else {
                 break;
@@ -91,10 +93,8 @@ public class CustomerPoolManager : MonoBehaviour
     }
 
     public void updateCustomerPool() {
-        string lastName = customerNamePool[customerNamePool.Count - 1];
-        if ((customerNamePool.Count < customerDataManager.getNumCustomers() - 1) && (customerDataManager.getRepCurrByName(lastName) >= RepThreshold)) {
-            customerNamePool.Add(customerDataManager.getCustomerName(customerNamePool.Count));
-        }
+        customerNamePool.Clear();
+        initPool();
     }
 
     public void addActiveCustomer(string customer) {

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lucky Walk
+  m_Name: Calico Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 742779778, guid: 07c4bd6ba79534ce5988edc6309bc43c, type: 3}
+      value: {fileID: -1497377275, guid: 484dea470f3b546d7a2181a6eef0171f, type: 3}
     - time: 0.083333336
-      value: {fileID: -400434671, guid: 07c4bd6ba79534ce5988edc6309bc43c, type: 3}
+      value: {fileID: 267318488, guid: 484dea470f3b546d7a2181a6eef0171f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 742779778, guid: 07c4bd6ba79534ce5988edc6309bc43c, type: 3}
-    - {fileID: -400434671, guid: 07c4bd6ba79534ce5988edc6309bc43c, type: 3}
+    - {fileID: -1497377275, guid: 484dea470f3b546d7a2181a6eef0171f, type: 3}
+    - {fileID: 267318488, guid: 484dea470f3b546d7a2181a6eef0171f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

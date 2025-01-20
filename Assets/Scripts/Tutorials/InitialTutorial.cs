@@ -84,7 +84,7 @@ public class InitialTutorial : MonoBehaviour
                 objectsArray[1].SetActive(true);
                 objectsArray[2].SetActive(false); //fishingEventHandler
                 GameObject case1Arrow = Instantiate(arrowDown, this.transform);
-                case1Arrow.transform.position = new Vector3(8.1f, -2.8f, 0f);
+                case1Arrow.transform.position = new Vector3(7.6f, -2.8f, 0f);
                 objectsArray[1].gameObject.GetComponent<Button>().onClick.AddListener(() => incrTutIndex());
                 break;
             case 2: //Dock, await scene change
@@ -136,7 +136,7 @@ public class InitialTutorial : MonoBehaviour
                 objectsArray[1].SetActive(false); //returnButton
                 objectsArray[2].SetActive(false); //fishingEventHandler
                 GameObject case7Arrow = Instantiate(arrowUp, this.transform);
-                case7Arrow.transform.position = new Vector3(6.6f, 3f, 0f);
+                case7Arrow.transform.position = new Vector3(6.5f, 3f, 0f);
                 objectsArray[3].gameObject.GetComponent<Button>().onClick.AddListener(() => nextStep()); //inv button
                 break;
             case 8: //Fish1, use bait

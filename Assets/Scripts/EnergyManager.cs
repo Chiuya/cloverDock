@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnergyManager : MonoBehaviour
 {
     private const float SceneLoadTime = 4.0f;
-    private const float EnergyToAdd = 15f;
+    private const float EnergyToAdd = 15.0f;
     private Energy energy;
     private DateTime currentTime = DateTime.UtcNow;
     private DateTime lastTimeSaved;
@@ -60,7 +60,7 @@ public class EnergyManager : MonoBehaviour
         SaveEnergyToJSON();
     }
 
-    public void addOnceAmount() {
+    public float addOnceAmount() {
         if (!isFullEnergy()) {
             energy.currentAmount += EnergyToAdd;
             if ((isFullEnergy()) && (energy.currentAmount <= (getMaxAmount() + EnergyToAdd))) {
@@ -68,6 +68,7 @@ public class EnergyManager : MonoBehaviour
             }
             SaveEnergyToJSON();
         }
+        return energy.currentAmount;
     }
 
     public float getMaxAmount()
@@ -184,7 +185,7 @@ public class EnergyManager : MonoBehaviour
                 }
             }
             if (toSetTimer < 0.0f) {
-                addOnceAmount();
+                addOnceAmount(); //dont use return string
                 setCurrTimer(getMaxTimer() + toSetTimer);
             } else {
                 setCurrTimer(toSetTimer);

@@ -29,7 +29,12 @@ public class CustomerDataManager : MonoBehaviour
     void Start()
     {
         //resetRep(); //FOR TESTING
-        //setCustomerRepTest("Little Boy", 19.98f); //TEST PURPOSES
+        //setCustomerRepTest("Little Boy", 99.96f); //TEST PURPOSES
+        //setHasGifted("Little Boy", false);
+        //setCustomerRepTest("Bride", 100f); //TEST PURPOSES
+        //setCustomerRepTest("Boxer", 100f); //TEST PURPOSES
+        //setCustomerRepTest("Ballerina", 100f); //TEST PURPOSES
+        //setCustomerRepTest("Samurai", 100f); //TEST PURPOSES
         //setIsAwaitingDialogue("Little Boy", false); //TEST PURPOSES
     }
 
@@ -235,11 +240,13 @@ public class CustomerDataManager : MonoBehaviour
     }
 
     public void setIsAwaitingDialogue(string customer, bool _bool) {
-        CustomerReputation ans = Array.Find(playerRep.playerRep, rep => rep.name == customer);
-        if (ans == null) {
+        int index = Array.FindIndex(playerRep.playerRep, rep => rep.name == customer);
+        if (index == -1) {
             Debug.Log("cant find customer to set dialogue");
+            return;
         }
-        ans.isAwaitingDialogue = _bool;
+        playerRep.playerRep[index].isAwaitingDialogue = _bool;
+        SaveCurrRepToJSON();
     }
 
     public string getIsGifted(string _customer) {
@@ -287,8 +294,8 @@ public class CustomerDataManager : MonoBehaviour
     }
 
     private bool isMilestoneRep(float currRep) {
-        if (Mathf.Approximately(currRep, 1.0f) || Mathf.Approximately(currRep, 10.0f) || Mathf.Approximately(currRep, 20) || Mathf.Approximately(currRep, 40) ||
-        Mathf.Approximately(currRep, 60) || Mathf.Approximately(currRep, 80) || Mathf.Approximately(currRep, MaxRep)) {
+        if (Mathf.Approximately(currRep, 1.0f) || Mathf.Approximately(currRep, 10.0f) || Mathf.Approximately(currRep, 20.0f) || Mathf.Approximately(currRep, 40.0f) ||
+        Mathf.Approximately(currRep, 60.0f) || Mathf.Approximately(currRep, 80.0f) || Mathf.Approximately(currRep, MaxRep)) {
             return true;
         } else {
             return false;
@@ -415,6 +422,25 @@ public class CustomerDataManager : MonoBehaviour
         //Console.Write("{0:00}", first2DecimalPlaces);
         return (int) first2DecimalPlaces;
     }
+
+    public void setHasGifted(string _customer, bool _bool) {
+        int index = Array.FindIndex(playerRep.playerRep, rep => rep.name == _customer);
+        if (index == -1) {
+            Debug.Log("cant find customer to set gifted");
+            return;
+        }
+        playerRep.playerRep[index].hasGifted = _bool;
+        SaveCurrRepToJSON();
+    }
+
+    public bool getHasGifted(string _customer) {
+        int index = Array.FindIndex(playerRep.playerRep, rep => rep.name == _customer);
+        if (index == -1) {
+            Debug.Log("cant find customer to get hasGifted");
+            return false;
+        }
+        return playerRep.playerRep[index].hasGifted;
+    }
     
 }
 
@@ -447,12 +473,14 @@ public class CustomerReputation
     public string name;
     public float currentRep;
     public bool isAwaitingDialogue;
+    public bool hasGifted;
 
     public CustomerReputation(string _name, float _currentRep)
     {
         name = _name;
         currentRep = _currentRep;
         isAwaitingDialogue = false;
+        hasGifted = false;
     }
 }
 

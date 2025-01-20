@@ -24,7 +24,7 @@
             "id": 2,
             "length": 27,
             "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-            "text": ["Hi mister.", "Winslow wanted me to tell you that...", "... you're really fluffy, but not as fluffy as Winslow.", "Yup!", "But I told him I can prove him wrong!", "Yes", "I just need to touch your ears.", 
+            "text": ["Hi mister.", "Winslow wanted me to tell you that...", "... you're really fluffy, but not as fluffy as Winslow.", "Yup!", "But I told him I can prove him wrong!", "Yes.", "I just need to touch your ears.", 
             "Awww...", "But the other adult let me touch his ears.", "Yeah. You remind me of him.", "He had fluffy ears.", "And a big hat.", "He was helping me get home because I was lost.", "But... I wonder where he went?", 
             "I can't remember.", "Maybe he got lost, too.", "...", "Mom said to stay in one place if I get lost.", "She said to wait for her to come get me.", "So I'll stay with you, okay?", "Just until mom gets here.", "...", 
             "...", "I'm bored.", "...", "Can I touch your ears?", "Pwease?"],
@@ -36,7 +36,7 @@
             "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
             "text": ["Hi, mister~", "I have a question.", "If you go on your boat and go really really far...", "... will you crash into the mountains?", "You can't go to the mountains? What if you try really hard?", "...", "That's weird", 
             "You're weird.", "I want to see if there's snow.", "Mr. Big Hat might be there. He got lost in the snow.", "He said he would help me go home.", "But he's a dum-dum. He got lost, too.", "...", "I miss him. He's nice", 
-            "He has a big hat", "And fluffy ears.", "He let me touch them. They're warm.", "Uh-huh. He helped me so I want to help him.", "So I gotta go to the mountains. What if he's there?", "...", "You think so? Should I wait?", 
+            "He has a big hat.", "And fluffy ears.", "He let me touch them. They're warm.", "Uh-huh. He helped me so I want to help him.", "So I gotta go to the mountains. What if he's there?", "...", "You think so? Should I wait?", 
             "But... what about the mountains?", "...", "Promise?"],
             "options": ["Hello, little one.", "Yes?", "", "No, it's too far.", "I've tried.", "The boat never seems to move.", "", "You want to go to the mountains?", "Snow?", "", "", "", "", "", "", "So you've mentioned.", 
             "Mr. Big Hat sounds like a good friend.", "", "Maybe you should stay here.", "What if he's looking for you too?", "Yes. We can wait together.", "If I figure out how to get there...", "I'll let you know, okay?", "Promise."]

@@ -76,6 +76,7 @@ public class TankManager : MonoBehaviour
         //Debug.Log("1");
         if (getIsLocked(index)) {
             //Debug.Log("2");
+            //tankObjectArray[index].gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
             tankObjectArray[index].gameObject.GetComponent<Button>().onClick.AddListener(unlockToolTip);
         } else {
             tankObjectArray[index].gameObject.GetComponent<Button>().onClick.AddListener(() => tankToolTip(index));
@@ -204,21 +205,20 @@ public class TankManager : MonoBehaviour
 
     public void unlockToolTip() {
         //Debug.Log("1");
-        int tankCost = 2500;
+        int tankCost = 100;
         for (int i = 1; i < 5; i++) {
             if (getIsLocked(i)) {
                 break;
             } else { //what the hell is this pricing idk
                 if (i == 2) {
-                    tankCost += 2500;
+                    tankCost = 500;
                 } else if (i == 3) {
-                    tankCost += 15000;
+                    tankCost = 1250;
                 } else if (i == 4) {
-                    tankCost += 5000;
+                    tankCost = 2500;
                 }
             }
         }
-        tankCost = tankCost / 2; //cost adjustment for each fish giving 0.04rep instead of 0.02
         if (getIsLocked(0)) {
             tankCost = 0;
         }

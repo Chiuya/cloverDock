@@ -121,4 +121,11 @@ public class FishingGameplay : MonoBehaviour
         inventoryManager.addFishToInventory(fish, 1);
         //playerManager.addExperience(fish.value);
     }
+
+    public string tutorialFishUpClownfish() {
+        Fish resultFish = fishDataManager.getFishByIndex(fishDataManager.getFishIndex("Clownfish"));
+        addFishToInventory(resultFish);
+        //Debug.Log("fish caught");
+        return resultFish.fishName;
+    }
 }
