@@ -164,11 +164,11 @@ public class TankManager : MonoBehaviour
                 int price = fishDataManager.getFishPrice(fishName);
                 playerManager.addCoins(price);
                 playerManager.addExperience(value);
-                Debug.Log("fish sale success: " + fishName);
+                //Debug.Log("fish sale success: " + fishName);
                 return true;
             }
         }
-        Debug.Log("cant sell this fish: " + fishName);
+        //Debug.Log("cant sell this fish: " + fishName);
         return false;
     }
 
@@ -208,13 +208,18 @@ public class TankManager : MonoBehaviour
         int tankCost = 100;
         for (int i = 1; i < 5; i++) {
             if (getIsLocked(i)) {
+                //Debug.Log("locked tank: " + i);
                 break;
             } else { //what the hell is this pricing idk
-                if (i == 2) {
+                //Debug.Log("price adjustment " + i);
+                if (i == 1) {
+                    //Debug.Log("tankCost i at 2 = " + tankCost);
                     tankCost = 500;
-                } else if (i == 3) {
+                } else if (i == 2) {
+                    //Debug.Log("tankCost i at 3 = " + tankCost);
                     tankCost = 1250;
-                } else if (i == 4) {
+                } else if (i == 3) {
+                    //Debug.Log("tankCost i at 4 = " + tankCost);
                     tankCost = 2500;
                 }
             }
@@ -222,6 +227,7 @@ public class TankManager : MonoBehaviour
         if (getIsLocked(0)) {
             tankCost = 0;
         }
+        //Debug.Log("tankCost = " + tankCost);
         unlockToolTipObj.GetComponent<PlayMakerFSM>().FsmVariables.GetFsmInt("tankCost").Value = tankCost;
         unlockToolTipObj.GetComponent<PlayMakerFSM>().SendEvent("OPEN");
     }
@@ -233,7 +239,7 @@ public class TankManager : MonoBehaviour
         tankObjectArray[i].gameObject.GetComponent<Button>().onClick.AddListener(() => tankToolTip(i));
         setIsLocked(i, false);
         setAmountHeld(i, 0);
-        updateTankObject(i);
+        //updateTankObject(i);
     }
 
     public void tankToolTip(int tankIndex) {
@@ -253,7 +259,7 @@ public class TankManager : MonoBehaviour
         if (existingIndex > -1) {
             if (getAmountHeld(existingIndex) > 0) {
                 stockTank(quantity, existingIndex);
-                Debug.Log("stocked currently existing tank instead");
+                //Debug.Log("stocked currently existing tank instead");
                 return;
             }
         }
@@ -276,7 +282,7 @@ public class TankManager : MonoBehaviour
         int existingIndex = Array.FindIndex(tankData.tanks, (tank => tank.fishName == fishName)); //check if tank already exists
         if (existingIndex > -1) {
             stockTank(quantity, existingIndex);
-            Debug.Log("stocked currently existing tank instead");
+            //Debug.Log("stocked currently existing tank instead");
             return;
         }
         if (tankIndex < 5 && tankIndex >= 0) {
@@ -286,7 +292,7 @@ public class TankManager : MonoBehaviour
             updateTankObject(tankIndex);
             SaveTanksToJSON();
         } else {
-            Debug.Log("tankIndex not valid");
+            //Debug.Log("tankIndex not valid");
         }
     }
 

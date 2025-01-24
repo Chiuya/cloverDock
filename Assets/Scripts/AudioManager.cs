@@ -8,7 +8,8 @@ public class AudioManager : MonoBehaviour
 {
     private static AudioManager instance;
     public Sound[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
     private float musicVol, soundEffectVol;
     private string currMusic;
 
@@ -31,8 +32,6 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.Play();
         currMusic = "outdoor";
-        musicSource.volume = musicVol;
-        sfxSource.volume = soundEffectVol;
         Application.runInBackground = true;
     }
 
@@ -66,11 +65,13 @@ public class AudioManager : MonoBehaviour
         //Debug.Log("volume changed to: " + _volume);
         musicVol = _volume;
         musicSource.volume = musicVol;
+        PlayerPrefs.SetFloat("Music", musicVol);
     }
 
     public void updateSoundEffectsVol(float _volume) {
         soundEffectVol = _volume;
-        sfxSource.volume = _volume;
+        sfxSource.volume = soundEffectVol;
+        PlayerPrefs.SetFloat("SoundEffects", soundEffectVol);
     }
 
     public float getMusicVol() {
@@ -84,6 +85,8 @@ public class AudioManager : MonoBehaviour
     private void loadSettings() {
         musicVol = PlayerPrefs.GetFloat("Music", 1.0f);
         soundEffectVol = PlayerPrefs.GetFloat("SoundEffects", 1.0f);
+        musicSource.volume = musicVol;
+        sfxSource.volume = soundEffectVol;
     }
 
 

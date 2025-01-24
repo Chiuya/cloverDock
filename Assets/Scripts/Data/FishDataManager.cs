@@ -12,8 +12,11 @@ public class FishDataManager : MonoBehaviour
 
     void Awake()
     {
-        string jsonFilePath = "Assets/Resources/Data/fishData.json";
-        string jsonContent = File.ReadAllText(jsonFilePath);
+        //string jsonFilePath = "Assets/Resources/Data/fishData.json";
+        //string jsonContent = File.ReadAllText(jsonFilePath);
+
+        TextAsset mytxtData = (TextAsset) Resources.Load("Data/fishData");
+        string jsonContent = mytxtData.text;
         fishData = JsonUtility.FromJson<FishData>(jsonContent).fishData;
         //Debug.Log("fishData successfully loaded");
         initFishSprites();

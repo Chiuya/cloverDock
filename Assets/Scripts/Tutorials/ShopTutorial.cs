@@ -37,6 +37,10 @@ public class ShopTutorial : MonoBehaviour
         switch (tutIndex) 
         {
             case 0:
+                objectsArray[4].GetComponent<Button>().enabled = false; //disable all other tank buttons (4-7)
+                objectsArray[5].GetComponent<Button>().enabled = false;
+                objectsArray[6].GetComponent<Button>().enabled = false;
+                objectsArray[7].GetComponent<Button>().enabled = false;
                 GameObject case0Arrow = Instantiate(arrowUp, this.transform);
                 case0Arrow.transform.position = new Vector3(2f, -4.5f, 0f);
                 objectsArray[0].SetActive(false); //door

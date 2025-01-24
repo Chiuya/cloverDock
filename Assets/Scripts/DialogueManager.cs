@@ -22,8 +22,11 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueConvo[] LoadDialogueFromJson(string npcName)
     {
-        string jsonFilePath = "Assets/Resources/Dialogue/" + npcName + ".json";
-        string jsonContent = File.ReadAllText(jsonFilePath);
+        //string jsonFilePath = "Assets/Resources/Dialogue/" + npcName + ".json";
+        //string jsonContent = File.ReadAllText(jsonFilePath);
+
+        TextAsset mytxtData = (TextAsset) Resources.Load("Dialogue/" + npcName);
+        string jsonContent = mytxtData.text;
         return JsonUtility.FromJson<DialogueData>(jsonContent).convoArray;
     }
 

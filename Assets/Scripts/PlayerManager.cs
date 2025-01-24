@@ -39,7 +39,7 @@ public class PlayerManager : MonoBehaviour
         } else
         {
             //Debug.Log("no player data saved, creating new player data");
-            playerData = new PlayerData(0, 0.0f);
+            playerData = new PlayerData(0);
             SavePlayerDataToJSON();
         }        
     }
@@ -195,11 +195,11 @@ public class PlayerData
     public string outfitSpritePath; //cosmetic outfit sprite
     //public string petSpritePath; //cosmetic pet sprite
 
-    public PlayerData(int _coins, float _maxExperience)
+    public PlayerData(int _coins)
     {
         coins = _coins;
         experience = 0;
-        maxExperience = _maxExperience;
+        maxExperience = 3000f;
         level = 1;
         isClockUnlocked = false;
         outfitSpritePath = "";

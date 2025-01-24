@@ -18,8 +18,11 @@ public class CustomerDataManager : MonoBehaviour
         LoadCurrRepFromJSON();
         //resetRep();
         //SaveCurrRepToJSON();
-        string jsonFilePath = "Assets/Resources/Data/customerData.json";
-        string jsonContent = File.ReadAllText(jsonFilePath);
+        //string jsonFilePath = "Assets/Resources/Data/customerData.json";
+        //string jsonContent = File.ReadAllText(jsonFilePath);
+
+        TextAsset mytxtData = (TextAsset) Resources.Load("Data/customerData");
+        string jsonContent = mytxtData.text;
         customerData = JsonUtility.FromJson<CustomerData>(jsonContent).customerData;
         initSprites();
         //Debug.Log("customerData successfully loaded");
@@ -77,13 +80,13 @@ public class CustomerDataManager : MonoBehaviour
     public void resetRep() {
         CustomerReputation[] newRepArray = new CustomerReputation[]
             {
-                new CustomerReputation("Lucky", 0),
-                new CustomerReputation("Missy", 0),
-                new CustomerReputation("Little Boy", -1),
-                new CustomerReputation("Bride", 0),
-                new CustomerReputation("Boxer", 0),
-                new CustomerReputation("Ballerina", 0),
-                new CustomerReputation("Samurai", 0)
+                new CustomerReputation("Lucky", 0.96f),
+                new CustomerReputation("Missy", 0.96f),
+                new CustomerReputation("Little Boy", 0.92f),
+                new CustomerReputation("Bride", 0.96f),
+                new CustomerReputation("Boxer", 0.96f),
+                new CustomerReputation("Ballerina", 0.96f),
+                new CustomerReputation("Samurai", 0.96f)
             };
         playerRep = new PlayerReputation(newRepArray);
         SaveCurrRepToJSON();
@@ -204,14 +207,15 @@ public class CustomerDataManager : MonoBehaviour
 
     public int getRepCurrByIndex(int customerIndex)
     {
-        float rep = playerRep.playerRep[customerIndex].currentRep;
+        double rep = (double) playerRep.playerRep[customerIndex].currentRep;
         int ans = (int) Math.Floor(rep);
         //Debug.Log("getting rep at index: " + customerIndex + " = " + ans + ", float val: " + );
-        if (rep > 0.0f && ans == 0) {
-            return 1;
-        } else {
-            return ans;
-        }
+        // if (rep > 0.0f && ans == 0) {
+        //     return 1;
+        // } else {
+        //     return ans;
+        // }
+        return ans;
     }
 
     public int getNumCustomers()

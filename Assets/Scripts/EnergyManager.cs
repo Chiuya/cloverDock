@@ -71,6 +71,16 @@ public class EnergyManager : MonoBehaviour
         return energy.currentAmount;
     }
 
+    public float subtractEnergy(float amount) { //ASSUMING GUARD BEFORE CALLING FUNCTION
+        if (amount <= energy.currentAmount) {
+            energy.currentAmount -= amount;
+            SaveEnergyToJSON();
+        } else {
+            Debug.Log("not enough energy to subtract -- where your guard at man");
+        }
+        return energy.currentAmount;
+    }
+
     public float getMaxAmount()
     {
         return energy.maxAmount;

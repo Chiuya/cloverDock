@@ -84,14 +84,14 @@ public class InitialTutorial : MonoBehaviour
                 objectsArray[1].SetActive(true);
                 objectsArray[2].SetActive(false); //fishingEventHandler
                 GameObject case1Arrow = Instantiate(arrowDown, this.transform);
-                case1Arrow.transform.position = new Vector3(7.6f, -2.8f, 0f);
+                case1Arrow.transform.position = new Vector3(8.0f, -2.5f, 0f);
                 objectsArray[1].gameObject.GetComponent<Button>().onClick.AddListener(() => incrTutIndex());
                 break;
             case 2: //Dock, await scene change
                 objectsArray[0].SetActive(false); //canvasMother
                 objectsArray[1].SetActive(false); //boatSceneLoad
                 GameObject case2Arrow = Instantiate(arrowDown, this.transform);
-                case2Arrow.transform.position = new Vector3(5.8f, 0f, 0f);
+                case2Arrow.transform.position = new Vector3(7.2f, 0f, 0f);
                 objectsArray[2].gameObject.GetComponent<Button>().onClick.AddListener(() => incrTutIndex());
                 break;
             case 3: //Gazebo, arrow on gazebo shop

@@ -155,7 +155,7 @@ public class CustomerPoolManager : MonoBehaviour
         custGO.gameObject.GetComponent<SpriteRenderer>().sprite = customerDataManager.getCustomerSprite(customer);
         custGO.transform.GetChild(0).GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = fishDataManager.getFishSpriteByName(fish);
         custGO.gameObject.GetComponent<Animator>().runtimeAnimatorController = getAnimator(customer);
-        if (customerDataManager.getIsAwaitingDialogue(customer)) {
+        if (customerDataManager.getIsAwaitingDialogue(customer) && !customerDataManager.isDefaultCustomer(customer)) {
             theFsm.SendEvent("DIALOGUE");
         }
         return custGO;

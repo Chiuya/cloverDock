@@ -128,4 +128,8 @@ public class FishingGameplay : MonoBehaviour
         //Debug.Log("fish caught");
         return resultFish.fishName;
     }
+
+    public void vibrate() {
+        Handheld.Vibrate();
+    }
 }

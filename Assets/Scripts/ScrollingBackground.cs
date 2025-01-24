@@ -10,9 +10,10 @@ public class ScrollingBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camWidth = Camera.main.orthographicSize * Camera.main.aspect;
+        camWidth = Camera.main.orthographicSize * Camera.main.aspect; //10.82f
         initialPos = new Vector3(-camWidth, transform.position.y, transform.position.z);
         transform.position = initialPos;
+        //Debug.Log("camWidth = " + camWidth);
         
     }
 
