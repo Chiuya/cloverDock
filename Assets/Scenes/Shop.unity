@@ -1150,13 +1150,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 50000
+          value: 10000
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 7500
+          value: 10000
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -1514,7 +1514,7 @@ MonoBehaviour:
           useVariable: 1
           type: 1
           floatValue: 0
-          intValue: 50000
+          intValue: 10000
           boolValue: 0
           stringValue: 
           vector4Value: {x: 0, y: 0, z: 0, w: 0}
@@ -1585,7 +1585,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 120
+          floatValue: 180
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -2054,7 +2054,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 50000
+        value: 10000
       - useVariable: 1
         name: invCoins
         tooltip: 
@@ -6007,7 +6007,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Fix the clock tower for
 
-    7500?'
+    10000?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f4a98e79bcb04f74a8f5c7b9315a45e, type: 2}
   m_sharedMaterial: {fileID: 5034641518273093500, guid: 5f4a98e79bcb04f74a8f5c7b9315a45e, type: 2}
@@ -7016,7 +7016,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 7500
+        value: 10000
       boolVariables:
       - useVariable: 1
         name: isUnlockable

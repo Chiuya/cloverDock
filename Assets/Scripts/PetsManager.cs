@@ -54,9 +54,9 @@ public class PetsManager : MonoBehaviour
     private void resetPets() {
         //Debug.Log("no pets inventory saved, creating pets");
         pets = new List<Pet>{
-            new Pet("Black Cat", "It keeps following me. How purr-sistent!", 5000, false),
-            new Pet("Dog", "I've made a fur-ever friend!", 5000, false),
-            new Pet("Raccoon", "One man's trash panda is another man's best friend.", 6250, false)
+            new Pet("Black Cat", "It keeps following me. How purr-sistent!", 10000, false),
+            new Pet("Dog", "I've made a fur-ever friend!", 12500, false),
+            new Pet("Raccoon", "One man's trash panda is another man's best friend.", 15000, false)
         };
         SavePetsToJSON();
     }

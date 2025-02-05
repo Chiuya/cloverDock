@@ -87,6 +87,8 @@ public class FishingGameplay : MonoBehaviour
         //add a random fish to inventory and return its name
         Fish resultFish = returnRandomFish();
         addFishToInventory(resultFish);
+        float value = (float) Math.Floor((resultFish.value / 2.0f));
+        playerManager.addExperience(value);
         //Debug.Log("fish caught");
         return resultFish.fishName;
     }

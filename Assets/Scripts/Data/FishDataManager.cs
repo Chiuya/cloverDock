@@ -205,6 +205,7 @@ public class FishDataManager : MonoBehaviour
 
     public int getFishPrice(string _fishName) {
         return (int) Math.Floor((getFishValueByName(_fishName) / 2.0));
+        //return getFishValueByName(_fishName);
     }
 }
 

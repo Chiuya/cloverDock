@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    private const int MaxAmountHeld = 100;
+    private const int MaxAmountHeld = 999;
     public FishDataManager fishDataManager;
     private List<ItemSlot> playerInventory;
     // Start is called before the first frame update

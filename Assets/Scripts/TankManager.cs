@@ -9,6 +9,7 @@ using HutongGames.PlayMaker;
 
 public class TankManager : MonoBehaviour
 {
+    private const int MaxAmountHeld = 99;
     public FishDataManager fishDataManager;
     public PlayerManager playerManager;
     public InventoryManager inventoryManager;
@@ -160,7 +161,8 @@ public class TankManager : MonoBehaviour
                     SaveTanksToJSON();
                 }
                 
-                int value = fishDataManager.getFishValueByName(fishName);
+                //int value = fishDataManager.getFishValueByName(fishName);
+                float value = (float) Math.Floor((fishDataManager.getFishValueByName(fishName) / 2.0f));
                 int price = fishDataManager.getFishPrice(fishName);
                 playerManager.addCoins(price);
                 playerManager.addExperience(value);
@@ -205,7 +207,7 @@ public class TankManager : MonoBehaviour
 
     public void unlockToolTip() {
         //Debug.Log("1");
-        int tankCost = 100;
+        int tankCost = 50;
         for (int i = 1; i < 5; i++) {
             if (getIsLocked(i)) {
                 //Debug.Log("locked tank: " + i);
@@ -217,10 +219,10 @@ public class TankManager : MonoBehaviour
                     tankCost = 500;
                 } else if (i == 2) {
                     //Debug.Log("tankCost i at 3 = " + tankCost);
-                    tankCost = 1250;
+                    tankCost = 1000;
                 } else if (i == 3) {
                     //Debug.Log("tankCost i at 4 = " + tankCost);
-                    tankCost = 2500;
+                    tankCost = 8000;
                 }
             }
         }
@@ -253,6 +255,7 @@ public class TankManager : MonoBehaviour
 
     public void replaceStockTank(int quantity, int tankIndex, int fishID) { //replace existing fish with new fish
         //Debug.Log("replace");
+        quantity = Math.Min(MaxAmountHeld, quantity);
         string originalName = getFishName(tankIndex);
         string newFishName = fishDataManager.getFishName(fishID);
         int existingIndex = Array.FindIndex(tankData.tanks, (tank => tank.fishName == newFishName)); //check if tank already exists
@@ -271,6 +274,7 @@ public class TankManager : MonoBehaviour
 
     public void stockTank(int quantity, int tankIndex) { //stock existing fish with same fish
         //Debug.Log("same stock");
+        quantity = Math.Min(MaxAmountHeld, quantity);
         string currFishName = getFishName(tankIndex);
         inventoryManager.removeFishFromInventory(currFishName, quantity);
         addAmountHeld(tankIndex, quantity);
@@ -278,9 +282,13 @@ public class TankManager : MonoBehaviour
 
     public void stockNewTank(int quantity, int tankIndex, int fishID) { //stock empty tank with new fish
         //Debug.Log("new tank stock");
+        quantity = Math.Min(MaxAmountHeld, quantity);
         string fishName = fishDataManager.getFishName(fishID);
         int existingIndex = Array.FindIndex(tankData.tanks, (tank => tank.fishName == fishName)); //check if tank already exists
         if (existingIndex > -1) {
+            if ((getAmountHeld(existingIndex) + quantity) > MaxAmountHeld) { //reduce quantity
+                quantity = MaxAmountHeld - getAmountHeld(existingIndex);
+            }
             stockTank(quantity, existingIndex);
             //Debug.Log("stocked currently existing tank instead");
             return;

@@ -32,7 +32,7 @@ public class CustomerDataManager : MonoBehaviour
     void Start()
     {
         //resetRep(); //FOR TESTING
-        //setCustomerRepTest("Little Boy", 99.96f); //TEST PURPOSES
+        //setCustomerRepTest("Missy", 99.92f); //TEST PURPOSES
         //setHasGifted("Little Boy", false);
         //setCustomerRepTest("Bride", 100f); //TEST PURPOSES
         //setCustomerRepTest("Boxer", 100f); //TEST PURPOSES
@@ -259,7 +259,8 @@ public class CustomerDataManager : MonoBehaviour
             Debug.Log("cant find customer to get is gifted");
             return "";
         }
-        if (!ans.isAwaitingDialogue && ans.currentRep >= MaxRep) {
+        if ((!ans.isAwaitingDialogue || isDefaultCustomer(_customer)) && ans.currentRep >= MaxRep) {
+            //Debug.Log("isGifted by: " + _customer);
             return Array.Find(customerData, customer => customer.customerName == _customer).gift;
         } else {
             //Debug.Log(_customer + " has not sent a gift yet");
@@ -284,7 +285,15 @@ public class CustomerDataManager : MonoBehaviour
         if (customerIndex < 0) {
             Debug.Log("customer index error, cant add one rep");
         }
-        playerRep.playerRep[customerIndex].currentRep += RepPerFish;
+        float toSet = playerRep.playerRep[customerIndex].currentRep + RepPerFish;
+        toSet = (float) Math.Round((double)toSet, 2, MidpointRounding.ToEven);
+        if (Math.Round((double)(toSet * 100)) % 2 != 0) { //enforces even number
+            toSet -= 0.01f;
+            //Debug.Log(toSet);
+        }
+        //TIMES 100, MODULO 2 != 0 THEN MINUS 0.01
+        //Debug.Log(toSet);
+        playerRep.playerRep[customerIndex].currentRep = toSet;
         float currRep = playerRep.playerRep[customerIndex].currentRep;
         if (isMilestoneRep(currRep)) {
             playerRep.playerRep[customerIndex].isAwaitingDialogue = true;
@@ -316,13 +325,13 @@ public class CustomerDataManager : MonoBehaviour
             case "Little Boy":
                 return true;
             case "Bride":
-                return (level >= 5);
+                return (level >= customerUnlockLevel("Bride"));
             case "Boxer":
-                return (level >= 10);
+                return (level >= customerUnlockLevel("Boxer"));
             case "Ballerina":
-                return (level >= 16);
+                return (level >= customerUnlockLevel("Ballerina"));
             case "Samurai":
-                return (level >= 23);
+                return (level >= customerUnlockLevel("Samurai"));
             default:
                 Debug.Log("invalid name for customerUnlock check: " + _name);
                 return false;
@@ -338,13 +347,13 @@ public class CustomerDataManager : MonoBehaviour
             case "Little Boy":
                 return 1;
             case "Bride":
-                return 5;
-            case "Boxer":
                 return 10;
+            case "Boxer":
+                return 14;
             case "Ballerina":
                 return 16;
             case "Samurai":
-                return 23;
+                return 17;
             default:
                 Debug.Log("invalid name for customerUnlock check: " + _name);
                 return Int32.MaxValue;

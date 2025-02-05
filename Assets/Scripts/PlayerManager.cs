@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HutongGames.PlayMaker;
 
 public class PlayerManager : MonoBehaviour
 {
     private PlayerData playerData;
+    public GameObject inventoryGO;
     public GameObject levelSliderGO;
     public SpriteRenderer outfitSprite;
     //public SpriteRenderer petSprite;
@@ -60,12 +62,14 @@ public class PlayerManager : MonoBehaviour
     {
         playerData.coins = _coins;
         SavePlayerDataToJSON();
+        inventoryGO.GetComponent<PlayMakerFSM>().SendEvent("COIN UPDATE");
     }
 
     public bool minusCoins(int amount) {
         if (amount <= playerData.coins) {
             playerData.coins -= amount;
             SavePlayerDataToJSON();
+            inventoryGO.GetComponent<PlayMakerFSM>().SendEvent("COIN UPDATE");
             return true;
         } else {
             Debug.Log("not enough coins!");
@@ -77,6 +81,7 @@ public class PlayerManager : MonoBehaviour
     {
         playerData.coins += _coins;
         SavePlayerDataToJSON();
+        inventoryGO.GetComponent<PlayMakerFSM>().SendEvent("COIN UPDATE");
     }
 
     public float getExperience()
@@ -114,7 +119,7 @@ public class PlayerManager : MonoBehaviour
 
     private float getMaxExperience(int level)
     {
-        int maxExp = 500*level + 2500;
+        int maxExp = (int) Math.Pow(2, level) + 50*level;
         return (float) maxExp;
     }
 
@@ -199,7 +204,7 @@ public class PlayerData
     {
         coins = _coins;
         experience = 0;
-        maxExperience = 3000f;
+        maxExperience = 52f;
         level = 1;
         isClockUnlocked = false;
         outfitSpritePath = "";

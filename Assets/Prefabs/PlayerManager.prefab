@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3867fbce3e7da48a59311c0aa9013573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryGO: {fileID: 0}
   levelSliderGO: {fileID: 0}
   outfitSprite: {fileID: 0}
 --- !u!114 &3462999633143066235
@@ -329,7 +330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 60}
+  m_AnchoredPosition: {x: 0, y: 85}
   m_SizeDelta: {x: 373.4323, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5028056145055615595

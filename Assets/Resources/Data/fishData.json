@@ -41,7 +41,7 @@
             "fishType": "Fish",
             "description": "A glittering goldfish. It doesn't remember me.",
             "spriteName": "Goldfish",
-            "value": 25},
+            "value": 24},
         {
             "ID": 6,
             "fishName": "Pufferfish",

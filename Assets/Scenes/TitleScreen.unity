@@ -1081,13 +1081,13 @@ MonoBehaviour:
         paramDataPos: 0000000000000000000000000100000000000000
         paramByteDataSize: 0000000000000000000000000000000001000000
     - name: Check Tutorial
-      description: 
+      description: first action for test purposes only
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 263.53125
         y: 213.1875
-        width: 115
+        width: 170
         height: 48
       isBreakpoint: 0
       isSequence: 0
@@ -1114,18 +1114,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.PlayerPrefsSetInt
-        - HutongGames.PlayMaker.Actions.PlayerPrefsSetInt
         - HutongGames.PlayMaker.Actions.PlayerPrefsGetInt
         - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
         - 
         - 
-        - 
-        actionEnabled: 00000101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000004000000080000000c000000
-        actionHashCodes: e2703a04e2703a04e2703a0409faa102
+        actionEnabled: 000101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000060000000a000000
+        actionHashCodes: e2703a04e2703a0409faa102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1201,25 +1199,21 @@ MonoBehaviour:
         - Failure
         - SUCCESS
         byteData: 00
-        arrayParamSizes: 010000000100000001000000010000000100000001000000
+        arrayParamSizes: 02000000020000000100000001000000
         arrayParamTypes:
-        - HutongGames.PlayMaker.FsmString
-        - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0c000000120000000c000000100000000c000000120000000c000000100000000c000000120000000c00000010000000100000001000000017000000170000001700000001000000
+        paramDataType: 0c00000012000000120000000c00000010000000100000000c000000120000000c00000010000000100000001000000017000000170000001700000001000000
         paramName:
         - keys
         - 
-        - values
-        - 
-        - keys
         - 
         - values
+        - 
         - 
         - keys
         - 
@@ -1231,8 +1225,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 000000000000000001000000000000000200000001000000030000000100000004000000020000000500000002000000030000000400000000000000010000000200000000000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000100000001000000000000000100000002000000020000000300000002000000030000000400000000000000010000000200000000000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Set Tutorial
       description: 
       colorIndex: 0
@@ -5144,7 +5138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5903761348439852605, guid: d67e860e65fca465d9180cabcc960140, type: 3}
       propertyPath: sfxSounds.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5903761348439852605, guid: d67e860e65fca465d9180cabcc960140, type: 3}
       propertyPath: sfxSounds.Array.data[6].clip
@@ -5153,6 +5147,14 @@ PrefabInstance:
     - target: {fileID: 5903761348439852605, guid: d67e860e65fca465d9180cabcc960140, type: 3}
       propertyPath: sfxSounds.Array.data[6].name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903761348439852605, guid: d67e860e65fca465d9180cabcc960140, type: 3}
+      propertyPath: sfxSounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 40add5f31cd9f48cab3f33ea2ac300a4, type: 3}
+    - target: {fileID: 5903761348439852605, guid: d67e860e65fca465d9180cabcc960140, type: 3}
+      propertyPath: sfxSounds.Array.data[7].name
+      value: fishTap
       objectReference: {fileID: 0}
     - target: {fileID: 7739029104416311370, guid: d67e860e65fca465d9180cabcc960140, type: 3}
       propertyPath: m_RootOrder

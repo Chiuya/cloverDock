@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnergyManager : MonoBehaviour
 {
     private const float SceneLoadTime = 4.0f;
-    private const float EnergyToAdd = 15.0f;
+    private const float EnergyToAdd = 10.0f;
     private Energy energy;
     private DateTime currentTime = DateTime.UtcNow;
     private DateTime lastTimeSaved;
@@ -228,5 +228,5 @@ public class Energy
 public class EnergyConstants
 {
     public const float DEFAULTAMOUNT = 100.0f;
-    public const float DEFAULTTIMER = 180.0f;
+    public const float DEFAULTTIMER = 300.0f;
 }

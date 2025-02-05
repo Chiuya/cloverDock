@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using HutongGames.PlayMaker;
 
 public class InitialTutorial : MonoBehaviour
 {
-    public GameObject arrowUp, arrowDown;
+    public GameObject arrowUp, arrowDown, tap, swipe;
     public GameObject[] objectsArray;
     public PlayerManager playerManager;
     private int tutIndex;
@@ -47,7 +48,7 @@ public class InitialTutorial : MonoBehaviour
         } else if (currScene == "Gazebo") {
             if (tutIndex > 2 && tutIndex < 6) {
                 //correct
-                if (objectsArray.Length != 7) {
+                if (objectsArray.Length != 8) {
                     Debug.LogError("incorrect gameobj number for Gazebo");
                 }
             } else {
@@ -79,12 +80,21 @@ public class InitialTutorial : MonoBehaviour
                 }
                 objectsArray[0].transform.GetChild(2).gameObject.SetActive(true);
                 objectsArray[1].SetActive(false); //returnButton
+                objectsArray[2].GetComponent<PlayMakerFSM>().SendEvent("READY"); //immediate fish ready
+                GameObject tapPrompt = Instantiate(tap, this.transform); //tap prompt
+                tapPrompt.transform.position = new Vector3(2.0f, 0.5f, 0f);
                 break;
             case 1: //Fish1: await return button
+                foreach(Transform child in this.transform) {
+                    Destroy(child.gameObject);
+                }
                 objectsArray[1].SetActive(true);
+                Vector3 returnButtonPos = Camera.main.ScreenToWorldPoint(objectsArray[1].transform.position);
+                Vector3 returnButtonScale = objectsArray[1].transform.localScale;
+                //Debug.Log(returnButtonPos);
                 objectsArray[2].SetActive(false); //fishingEventHandler
                 GameObject case1Arrow = Instantiate(arrowDown, this.transform);
-                case1Arrow.transform.position = new Vector3(8.0f, -2.5f, 0f);
+                case1Arrow.transform.position = returnButtonPos + new Vector3(-(returnButtonScale.x / 3.0f), -(returnButtonPos.y / 5.0f), 10f);
                 objectsArray[1].gameObject.GetComponent<Button>().onClick.AddListener(() => incrTutIndex());
                 break;
             case 2: //Dock, await scene change
@@ -99,7 +109,7 @@ public class InitialTutorial : MonoBehaviour
                 objectsArray[1].SetActive(false); //dockSceneLoad
                 objectsArray[2].SetActive(false); //shopExteriorSceneLoad
                 GameObject case3Arrow = Instantiate(arrowUp, this.transform);
-                case3Arrow.transform.position = new Vector3(-8.5f, -6f, 0f);
+                case3Arrow.transform.position = new Vector3(-7f, -5f, 0f);
                 objectsArray[4].gameObject.GetComponent<Button>().onClick.AddListener(() => nextStep());
                 if (playerManager == null) {
                     Debug.LogError("no playermanager! case 3");
@@ -118,6 +128,9 @@ public class InitialTutorial : MonoBehaviour
                 foreach(Transform child in this.transform) {
                     Destroy(child.gameObject);
                 }
+                GameObject swipePrompt = Instantiate(swipe, this.transform);
+                swipePrompt.transform.SetParent(objectsArray[7].transform);
+                swipePrompt.transform.position = new Vector3(0f, -4.0f, 0f);
                 objectsArray[4].SetActive(false); //gazebo shop button
                 objectsArray[6].transform.GetChild(0).gameObject.SetActive(false); //shop interface
                 objectsArray[1].SetActive(true); //dockSceneLoad
@@ -135,8 +148,10 @@ public class InitialTutorial : MonoBehaviour
             case 7: //Fish1, open inv
                 objectsArray[1].SetActive(false); //returnButton
                 objectsArray[2].SetActive(false); //fishingEventHandler
+                Vector3 invButtonPos = Camera.main.ScreenToWorldPoint(objectsArray[3].transform.position);
+                Vector3 invButtonScale = objectsArray[3].transform.localScale;
                 GameObject case7Arrow = Instantiate(arrowUp, this.transform);
-                case7Arrow.transform.position = new Vector3(6.5f, 3f, 0f);
+                case7Arrow.transform.position = invButtonPos + new Vector3(-(invButtonScale.x / 3.0f), -(invButtonScale.y * 1.5f), 10f);
                 objectsArray[3].gameObject.GetComponent<Button>().onClick.AddListener(() => nextStep()); //inv button
                 break;
             case 8: //Fish1, use bait
