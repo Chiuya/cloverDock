@@ -132,6 +132,6 @@ public class FishingGameplay : MonoBehaviour
     }
 
     public void vibrate() {
-        Handheld.Vibrate();
+        //Handheld.Vibrate();
     }
 }
