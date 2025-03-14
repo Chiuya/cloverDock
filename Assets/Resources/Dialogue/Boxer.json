@@ -1,0 +1,74 @@
+{
+    "convoArray": [
+        {
+            "id": 0,
+            "length": 18,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false],
+            "text": ["Yo, old man!", "Ya see any other old man 'round here?", "Number one pro boxer out there, that's who.", "And this number one boxer's damn hungry.", 
+            "Ya got any good protein, old man?", "Just fish? Nothin' else?", "Beef rice? Pork cutlet? Roast duck?", "Chicken breast? Steak?", "Horse meat?", "Just fish, huh.", "...", 
+            "Not my first choice o' protein, but it'll do.", "He inspects the fish in your tanks.", "Woa! These shrimps are huge!", "Now THIS is protein!", "I'll take every shrimp ya've got!", 
+            "Well then...", "Time to hit the gym!"],
+            "options": ["Are you talking to me?", "Who are you?", "", "", "I have fish.", "", "No...", "No.", "Fish.", "", "", "You'd choose horse over fish?", "", "", "", "Sure, no problem.", "", ""]
+        },
+        {
+            "id": 1,
+            "length": 17,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["'Sup, old man!", "Two pounds o' shrimp, please!", "Yep! Gotta hit my protein for the day!", "And gotta hit the gym!", "Well, number one boxer's gotta stay in tip-top shape.", 
+            "Even us natural geniuses gotta work hard.", "Stay strong, stay humble. That's my motto!", "Yep! And very strong.", "I've always been strong, that's why I decided to be a boxer in the first place.", 
+            "Made some real good money, ha!", "Never lost a fight.", "22 matches. 22 wins. 15 by knockout.", "Number one pro boxer!", "Exactly. See, ya get it, old man. Ya get me.", "Ya get me more than my own folks ever did.", 
+            "'Preciate it, old man. Love ya.", "See ya 'round."],
+            "options": ["Hello again.", "That's a lot of shrimp.", "", "You sure love exercising.", "", "", "Yes... very humble.", "", "", "", "", "", "Strong and humble.", "", "", "", ""]
+        },
+        {
+            "id": 2,
+            "length": 18,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Shrimp's been real juicy lately.", "Must be shrimp season now, eh?", "Although... can't really tell what season it is 'round here.", "Judgin' by the shrimp, must be winter soon.", "I sure do! My family's got a restaurant.", 
+            "Big ol' scrapheap, that thing, but we make a damn good shrimp rice.", "I have shrimp rice three times a day, seven days a week.", "Got real sick o' shrimp!", "...", "Well, yeah...", "I guess ol' habits die hard.", 
+            "I've been missin' my ma's shrimp rice these days.", "I hope she's doing alright.", "She never did approve of my lifestyle.", "Bit o' a delinquent son... that's me.", "...", "Strongest and most humble son, too!", "Number one! Never lost a fight!"],
+            "options": ["", "", "", "You sure know your shrimps.", "", "", "", "But you buy shrimp every time.", "", "", "", "", "", "", "", "", "Yep.", ""]
+        },
+        {
+            "id": 3,
+            "length": 18,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey, old man.", "The weather here. Never changes, does it? Always the same.", "Back in my hometown, it's always rainin'. Always.", "Every day, the same ol' grey sky.", "Sure is. Ya get used to it, though. Problem is, ya don't see the sky a whole lot.", 
+            "Makes ya forget how big the world really is, y'know?", "My ma used to hang up these lil' cloth dolls. She'd call 'em lil' teru.", "S'posed to chase off the rain. She'd string 'em up by the window.", "A real tiny thing, real tiny smile, always hopin' for sunshine.", 
+            "Ha, never did. But she kept 'em up there, anyway. Said it gave her hope.", "Not that it's a bad thing, I guess. Bit silly, though. Bit pointless.", "Rain's gonna come, anyway. Can't fight it.", "And I'd know. I'd win a fight against anything.", 
+            "I didn't get it for the longest time.", "But... I guess she just needed somethin' to hold onto.", "Maybe some things are worth hopin' for, even if ya know, deep down, it ain't comin'.", "Yeah...", "Like sunshine."],
+            "options": ["Hello there.", "It's steady, I suppose.", "", "Sounds dreary.", "", "", "", "", "Did it ever work?", "", "", "", "", "", "", "Like sunshine.", "", ""]
+        },
+        {
+            "id": 4,
+            "length": 25,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey, old man.", "Not much to do 'round here, eh?", "Got me thinkin' 'bout the past. 'Bout why I took up boxing.", "At first it was just to help out my folks with the restaurant.", "Times were tough. Rent was high, bills kept comin', and debts kept pilin'.", 
+            "My ma worked herself to the bone.", "Took up boxing to bring in some extra dough.", "Figured if I could take a few hits and bring in some cash, why not?", "I'm not real smart, but I'm real stubborn.", "It was enough to keep food on the table. But ma hated it.", 
+            "Every lil' scratch or bruise had her frettin'.", "Always mutterin' 'bout how it better be my last fight.", "It never was, though.", "The adrenaline, the crowd cheerin'...", "It's addictin'.", "But every time I step into the ring, I think of my ma.", 
+            "She's the real reason I keep goin'. She's my corner, ya know?", "I come home all black and blue and she'd still patch me up.", "Shakin' her head the whole time.", "Kept sayin' one day I'd take a hit I can't come back from.", "She ain't wrong to worry.", 
+            "But what else can I do? We need the money.", "And... bein' number one...", "I always hoped it'd make her proud, y'know.", "Even if she never said it out loud."],
+            "options": ["Hello again.", "Guess not.", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "I'm sure she was."]
+        },
+        {
+            "id": 5,
+            "length": 22,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey, old man...", "...", "It's funny. Been thinkin' more and more and...", "I remember the last time I saw the rain.", "It's like the sky never stopped cryin'.", "I was closin' up the restaurant.", "Just me, lockin' the doors while ma was upstairs.", 
+            "Couple o' guys showed up, lookin' for trouble.", "'Course I wasn't gonna let 'em take what little we had.", "Number one pro boxer, y'know? 'Course I ain't backin' down.", "Those guys were chumps.", "But... they fought dirty.", "One of 'em pulled a knife.", "Didn't even see it comin'.", 
+            "Next thing I know, I'm on the ground.", "Sharp, burnin' pain in my stomach.", "Couldn't move or nothin'.", "I remember just bein' relieved my ma was already upstairs.", "I kept starin' up at the sky, wonderin' if it'd stop rainin' for just a second.", 
+            "Let me see the stars or somethin', ya know?", "But it never did.", "Just rain, all the way 'til the end."],
+            "options": ["Hello.", "You look down.", "", "", "", "", "", "", "", "", "", "Dirty?", "", "", "", "", "", "", "", "", "", ""]
+        },
+        {
+            "id": 6,
+            "length": 27,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hey, old man.", "Yeah, but... somethin' feels weird today.", "There's a road I ain't ever seen before. Just over the hill.", "It's like it came outta nowhere. Ya know where it leads?", "Ya can't?", "...", "Huh. Guess that means it's for me.", "I got a feelin' I need to go check it out.", 
+            "Feels like this is what I've been waitin' for.", "Been stuck here so long, I've started to miss the rain.", "Tell ya what...", "I'll go check out the road, and I'll come back and tell ya what's down there.", "Tell ya if there's anythin' cool.", "...", "At the same time... I kinda don't wanna leave.", 
+            "Don't want ya feelin' lonely without me.", "Yeah... you're tougher than ya look.", "But, just in case ya miss me...", "I'll leave one of my ma's lil' terus with ya.", "Not that it ever rains here, anyway.", "Lil' guy ain't got much of a job to do here.", "Still... just in case, ya know?", "...", 
+            "Hey, old man?", "Don't forget about me, alright?", "Take care of yourself while I'm away, ya got that?", "See ya, old man."],
+            "options": ["You're back.", "Weird?", "A road?", "I can't see the road.", "", "", "", "", "", "", "", "", "I'd like that.", "", "", "I'll be okay.", "", "", "", "", "", "", "", "Yeah?", "I couldn't if I tried.", "Okay.", "Goodbye."]
+        }
+    ]
+}

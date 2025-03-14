@@ -1,0 +1,73 @@
+{
+    "convoArray": [
+        {
+            "id": 0,
+            "length": 17,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hi mister!", "Fluffy!", "Are you a bear?", "I have a pet bear.", "His name is Winslow.", "Winslow hides under my bed and scares my enemies.", 
+            "He eats the bad guys when I sleep.", "Do you eat bad guys, mister?", "Fish! I eat fish, too!", "I like clownfish.", "They're orange, my favourite colour.", 
+            "My mom says I'm like Nemo.", "Because I get lost a lot.", "...", "...", "Oh yeah...", "Where are we? I got lost on my way home..."],
+            "options": ["Hello there, little one", "Please don't touch my ears...", "", "", "", "", "", "I eat fish.", "", "", "", "", "", "", "", "", ""]
+        },
+        {
+            "id": 1,
+            "length": 19,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hi mister!", "I followed the roads but I couldn't leave.", "My mom says to follow the roads so I don't get lost.", "But I think I got lost again.", 
+            "I followed the road but I just came back here.", "Do you know where to go?", "You dunno?", "But you're an adult.", "Mom says adults know everything.", 
+            "Mom also says to ask an adult for help if I get lost.", "Are you an adult?", "Really? But you don't know stuff.", "What? So adults don't exist.", "...", "Then... what DO you know?", 
+            "...", "...", "I knew that already.", "You don't know very much, do you, mister?"],
+            "options": ["Hello again.", "", "", "", "", "Sorry, I don't know.", "", "", "Well...", "", "Yes.", "Nobody knows everything.", "Adults exist.", "We just don't know everything", 
+            "Did you know that...", "Clownfish are all born males?", "...", "", "..."]
+        },
+        {
+            "id": 2,
+            "length": 27,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hi mister.", "Winslow wanted me to tell you that...", "... you're really fluffy, but not as fluffy as Winslow.", "Yup!", "But I told him I can prove him wrong!", "Yes.", "I just need to touch your ears.", 
+            "Awww...", "But the other adult let me touch his ears.", "Yeah. You remind me of him.", "He had fluffy ears.", "And a big hat.", "He was helping me get home because I was lost.", "But... I wonder where he went?", 
+            "I can't remember.", "Maybe he got lost, too.", "...", "Mom said to stay in one place if I get lost.", "She said to wait for her to come get me.", "So I'll stay with you, okay?", "Just until mom gets here.", "...", 
+            "...", "I'm bored.", "...", "Can I touch your ears?", "Pwease?"],
+            "options": ["Hello there.", "", "He said that?", "", "Really?", "", "... maybe not.", "", "Other adult?", "", "", "", "", "", "", "", "", "", "That's a smart thing to do.", "Of course.", "", "", "", "", "", "", ""]
+        },
+        {
+            "id": 3,
+            "length": 24,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hi, mister~", "I have a question.", "If you go on your boat and go really really far...", "... will you crash into the mountains?", "You can't go to the mountains? What if you try really hard?", "...", "That's weird", 
+            "You're weird.", "I want to see if there's snow.", "Mr. Big Hat might be there. He got lost in the snow.", "He said he would help me go home.", "But he's a dum-dum. He got lost, too.", "...", "I miss him. He's nice", 
+            "He has a big hat.", "And fluffy ears.", "He let me touch them. They're warm.", "Uh-huh. He helped me so I want to help him.", "So I gotta go to the mountains. What if he's there?", "...", "You think so? Should I wait?", 
+            "But... what about the mountains?", "...", "Promise?"],
+            "options": ["Hello, little one.", "Yes?", "", "No, it's too far.", "I've tried.", "The boat never seems to move.", "", "You want to go to the mountains?", "Snow?", "", "", "", "", "", "", "So you've mentioned.", 
+            "Mr. Big Hat sounds like a good friend.", "", "Maybe you should stay here.", "What if he's looking for you too?", "Yes. We can wait together.", "If I figure out how to get there...", "I'll let you know, okay?", "Promise."]
+        },
+        {
+            "id": 4,
+            "length": 23,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Hi mister!", "It's kind of cold.", "Can I go in your pouch?", "Your pouch.", "Really?", "But I go in mom's pouch when it's cold.", "Hmm... that's weird.", "Mr. Big Hat also doesn't have a pouch.", 
+            "What do you do if you're cold?", "Hmm... that's true.", "...", "Woa! So does Mr. Big Hat!", "But! But! If you sleep the whole time, you won't see the snowflakes!", "Snowflakes are pretty!", "Did you know that every snowflake is different?", 
+            "Uh-huh! And, and...", "There's six sides!", "Yep! Mom says they're frozen stars.", "They fall from the sky, and you make wishes on them.", "You wanna hear my wish?", "I wish to touch your ears.", "...", "..."],
+            "options": ["Hello there.", "Yes, it's been a bit chilly.", "... what?", "I don't have a pouch...?", "", "I don't have one of those.", "", "", "I'm fluffy and warm.", "If it gets too cold...", "I sleep until it's warm.", "", "", "", "Really?", 
+            "", "Wow, you know so much.", "", "Is that so?", "", "...", "...", "Fine, why not."]
+        },
+        {
+            "id": 5,
+            "length": 22,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["...", "...", "...", "It's cold today. Really cold.", "It keeps getting colder.", "But...", "I think... I think it was colder when I got lost.", "There was snow everywhere. I couldn't see the road.", "Mr. Big Hat showed up and let me hold his hand.", 
+            "He's fluffy and warm.", "He said he was gonna go look for food.", "But...", "He never came back.", "I waited a long time.", "But it kept getting colder.", "Mr. Big Hat says he sleeps when it's too cold so I went to sleep, too.", 
+            "...", "When I woke up, I was here, but not Mr. Big Hat.", "...", "Do you think he's still looking for me?", "I miss Mr. Big Hat.", "I miss my mom."],
+            "options": ["Hello.", "", "You alright?", "Is it? It feels the same.", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "I'm sure he is.", "", ""]
+        },
+        {
+            "id": 6,
+            "length": 20,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false],
+            "text": ["Hi mister!", "Uh-huh! I saw it!", "The road! The road that leads home.", "Yea!", "So... I came to say bye.", "Uhm... but...", "If you see Mr. Big Hat, tell him I went home, okay?", "So he doesn't worry.", "...", "But...", 
+            "You'll be lonely, though.", "So...", "I'll leave Winslow with you.", "He'll protect you. He'll eat the bad guys.", "Take care of him, okay?", "He likes warm places. So don't let him get cold, okay?", "He gives you a big hug.", 
+            "Thank you for waiting with me, mister.", "I'll tell mom about you!", "Bye-bye!"],
+            "options": ["Hello there. You look happy.", "Saw what?", "You did?", "", "", "", "", "I will.", "", "", "", "", "", "Thank you.", "", "Of course.", "", "", "", "Goodbye, little one."]
+        }
+    ]
+}

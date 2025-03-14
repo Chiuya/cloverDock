@@ -1,0 +1,53 @@
+{
+    "customerData": [
+        {
+            "customerName": "Lucky",
+            "description": "She has such soft paws. The claws... not so much.",
+            "spriteName": "Lucky",
+            "gift": "Lantern",
+            "faveFish": "Tuna"
+        },
+        {
+            "customerName": "Missy",
+            "description": "Timid and quiet. She keeps sneaking up on me!",
+            "spriteName": "Missy",
+            "gift": "Windchime",
+            "faveFish": "Seahorse"
+        }, 
+        {
+            "customerName": "Little Boy",
+            "description": "He's lost his way.",
+            "spriteName": "Little Boy",
+            "gift": "Winslow",
+            "faveFish": "Clownfish"
+        },
+        {
+            "customerName": "Bride",
+            "description": "Stubborn and sarcastic.",
+            "spriteName": "Bride",
+            "gift": "Rose",
+            "faveFish": "Squid"
+        },
+        {
+            "customerName": "Boxer",
+            "description": "He's a bit of a rascal.",
+            "spriteName": "Boxer",
+            "gift": "Teru teru bozu",
+            "faveFish": "Shrimp"
+        },
+        {
+            "customerName": "Ballerina",
+            "description": "She is a little... eccentric.",
+            "spriteName": "Ballerina",
+            "gift": "Music box",
+            "faveFish": "Goldfish"
+        },
+        {
+            "customerName": "Samurai",
+            "description": "He likes to talk in metaphors. And often.",
+            "spriteName": "Samurai",
+            "gift": "Origami crane",
+            "faveFish": "Pufferfish"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "convoArray": [
+        {
+            "id": 0,
+            "length": 15,
+            "isAction": [false, false, false, false, false, true, false, false, false, false, false, false, false, false, false],
+            "text": ["Hm. A humble abode.", "Greetings, little bear.", "Hoho... true. Yet, perspective is everything.", "Tell me, does this path lead anywhere? I find myself walking, yet I end up at the same destination.", 
+            "Hmm... how peculiar. A road that winds without destination.", "He strokes his chin thoughtfully.", "Yet, a destination is not always necessary. Though the path is unclear, the journey itself holds value.", 
+            "...", "Tell me, little bear, how does one know when a fish will bite?", "Precisely. Observation, patience, understanding.", "Perhaps these roads, too, will reveal their hand in time.", 
+            "Thank you, little bear. You have given me much to ponder.", "A humble fisherman, indeed...", "... but even a stone resting in a stream shapes the current around it.", 
+            "Until we meet again."],
+            "options": ["Hello?", "I'm taller than you?", "", "Yeah, it does that.", "", "", "", "", "You'll feel it in the line.", "", "", "", "", "", ""]
+        },
+        {
+            "id": 1,
+            "length": 17,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Greetings, little bear.", "What a curious fish you have here.", "Its strange shape... these sharp spines...", "Pufferfish, yes?", "Dangerous, yet fascinating. A creature that swells to defend itself.", 
+            "A warrior in its own right.", "Indeed. A normally harmless little fish, when threatened, it reveals its true self.", "Not to harm, but to defend. Its spines are both its armour and its spear.", 
+            "There is wisdom to be learned from this curious fish.", "Strength does not always lie in the blade, but in knowing when to shield oneself.", "Do you enjoy catching such fish, little bear? They must be hard to handle.", 
+            "Much like life, then. Handle it carelessly, and it will remind you of its sharp edges.", "Treat it with kindness, and it reveals its beauty.", "Even the smallest of warriors have their place in the grand tapestry of life.", 
+            "Thank you for this moment of reflection, little bear.", "It has been delightful.", "Until next time, little bear. May your line remain steadfast."],
+            "options": ["Hello again.", "", "", "", "", "A warrior?", "", "", "", "", "Yeah.", "", "", "", "Okay...", "", ""]
+        },
+        {
+            "id": 2,
+            "length": 17,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Sometimes, even the smallest footprints can leave the deepest impressions.", "There was a time when the snow was my companion.", "The forest lay blanketed in white, the lands heavy with silence.", 
+            "But suddenly... the silence was no more.", "A child. A small, fragile soul, lost and shivering in the cold.", "I took him under my care. I carried him through the forest, shielding him from the storm.", 
+            "But what became of him... I cannot recall.", "There are gaps in my memory, like footprints erased by fresh snow.", "I recall only the cold biting at my skin and the child's endless chatter.", 
+            "He was a bright flame amongst the unforgiving flurries.", "Even amidst the frost, he found joy.", "He frolicked in the snow as if the storm was something beautiful.", 
+            "Children truly see hope where adults see hardship.", "Either way... he was my purpose in that moment. My reasons to endure.", "I do not know how we separated... perhaps the snow stole him away from me.", 
+            "But I cannot rest, little bear, not until we reunite.", "Wherever he is, I pray the snow no longer chills his bones."],
+            "options": ["Oh, hello.", "", "", "", "A child?", "", "", "", "", "", "", "", "", "", "", "", ""]
+        },
+        {
+            "id": 3,
+            "length": 21,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Do you know the tale of the thousand paper cranes?", "Fold them all, and you get a wish. A promise born of patience and purpose.", "I once undertook this task myself.", 
+            "The child and I... we folded them together, one by one.", "His small hands struggled to find the right folds, and mine...", "Well, mine are better suited to a sword than to delicate paper.", 
+            "The rhythm of folding became its own kind of meditation, of peace.", "But, well, a thousand is not merely a number--it is a mountain.", "No... I didn't.", "And yet, that is the curious thing, little bear.", 
+            "I never truly knew what to wish for.", "But each crane itself granted me everything I could wish for.", "Patience, hope, a shared moment...", "A moment of tranquility within the haven of a cave...", 
+            "While a storm of frost rages just outside.", "A thousand dreams, folded into paper.", "Some journeys, I've learned, are far more important than their destinations.", 
+            "...", "Perhaps it is time I return to that journey.", "There is not much to do around here, after all.", "Perhaps there is yet a wish waiting to be found."],
+            "options": ["I've heard of it.", "", "", "", "", "", "", "You didn't finish them?", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+        },
+        {
+            "id": 4,
+            "length": 21,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["You know, little bear, some people speak of fate as if it is something to be feared.", "Fate is a river, constantly flowing, and we are all but leaves caught in its current.", 
+            "It will sometimes carry us to places we do not choose.", "But how we choose to face its current is what defines us.", "And duty, honour... these are the values that steer us through rough waters.", 
+            "To fight the current is to waste energy and lose direction.", "We must align ourselves with the flow, and move with purpose.", "Our duty is what we owe to those who came before us, and to those who will come after.", 
+            "It is a responsibility that cements our place in the world. A compass by which we find our way.", "And our honour...", "Honour is the reflection of one's true self. It is how we carry ourselves in this world.", 
+            "It's in the breath we take before a decision, the pause before action.", "Honour is not something we are born with--it is something we build.", "A true test of honour is not whether one sacrifices...", 
+            "... but how they bear the weight of that sacrifice.", "That is the burden of honour.", "Indeed. Our path down the river of fate is shaped by our choices, our struggles.", 
+            "Fate is the stage, the scene.", "But we, little bear, are the actors.", "We determine how we choose to play our part.", "What defines us is not the outcome of our journey, but how we walk the path."],
+            "options": ["It can be a scary thing.", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Sounds heavy.", "", "", "", "", "Okay."]
+        },
+        {
+            "id": 5,
+            "length": 21,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Little bear, have you ever sought something so desperately that you lost sight of where you stood?", "It is a strange sensation.", "One moment, there is solid earth beneath your feet, and the next... nothing but air.", 
+            "Fell, yes... I remember it clearly now.", "I had set out to search for food--anything to sustain the child.", "But I was careless in my desperation.", "The snow beneath my feet... crumbled.", 
+            "I recall only the wind roaring in my ears, the world spinning as if it were unraveling.", "And then...", "When I opened my eyes, I was here.", "This unfamiliar land of strange, winding roads.", 
+            "I do not know what has become of the child.", "...", "His laughter still echoes in my mind, like a melody I cannot place.", "Did I save him? Or did I fail?", 
+            "That question weighs heavier than any blade I've ever carried.", "You sound certain, little bear. Perhaps you're right.", "But for now, the memory of his laughter is both a burden and a blessing.", 
+            "Though the path forward is winding and uncertain, I will walk it with purpose.", "Thank you, little bear, for listening. Sometimes, the weight feels lighter when shared.", 
+            "May your nets be full, and your waters ever calm."],
+            "options": ["What?", "", "You fell?", "", "", "", "", "", "", "", "", "", "", "", "", "You'll find your answer someday.", "", "", "", "", ""]
+        },
+        {
+            "id": 6,
+            "length": 18,
+            "isAction": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+            "text": ["Greetings, little bear.", "It is strange, but I can see it now.", "The path, stretching before me.", "Yes. It is my time, isn't it? You don't see it?", "How curious...", 
+            "I wonder if you are not the same as us, little bear.", "You have been here for so long, watching, guiding, waiting.", "Lingering longer than any of us.", "Perhaps your role is not yet over.", 
+            "Each quiet day, each passing moment, you give purpose to those who wander.", "You guide those who are lost.", "...", "Thank you, little bear, for granting me the peace I sought.", 
+            "The path calls to me, and I must follow it.", "When a leaf falls, it does so knowing it has lived its time.", "You, too, will know your moment when it comes.", 
+            "Farewell, little bear. You will find your path in your own time.", "Until then, may your waters remain calm."],
+            "options": ["Hello again.", "", "The path?", "No, I don't.", "", "", "", "", "", "", "", "", "", "", "", "", "", "Goodbye."]
+        }
+    ]
+}
